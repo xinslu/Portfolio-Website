@@ -6,7 +6,7 @@ export default class Scroll extends React.Component{
   }
   componentDidMount =()=> {
   let topScrollPosition = window.pageYOffset
-  var awardstopPos = document.getElementById("awards").offsetTop;
+  var awardstopPos = document.getElementById("awards").offsetTop-300;
   var skillstopPos = document.getElementById("skills").offsetTop-300;
   var abouttopPos = document.getElementById("about_me").offsetTop-300;
   var internshipstopPos = document.getElementById("internships").offsetTop-300;

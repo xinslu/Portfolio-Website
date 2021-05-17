@@ -29,7 +29,7 @@ class NavigationBar extends Component {
         >
           <nav className="nav navbar-light bg-primary nav-pills d-flex flex-column h-100 justify-content-center" style={{position: "fixed", fontFamily: "Tahoma"}}>
             <div className="nav-item">
-              <a id="home link" href="#" className="nav-link">
+              <a id="home link" href="#" className="nav-link active">
                 HOME
               </a>
             </div>
