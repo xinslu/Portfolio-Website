@@ -4,7 +4,7 @@ import NotFoundPage from '../pages/404'
   
   const Body = () => {
   	return(
-  			<div>
+  			<div id="body">
           	<div id="home" style={{paddingTop: "33vh"}}><h1 className="display-1 text-center" style={{fontFamily: "Trebuchet MS"}}>Kinshuk
             		<span className="text-primary"> Phalke</span>
           	</h1>
@@ -13,6 +13,7 @@ import NotFoundPage from '../pages/404'
                 <div style={{paddingTop : "2vh"}}></div>
             <div style={{display: "inline"}}><h2><a href="https://github.com/xinslu" target="_blank"><i class="devicon-github-original"></i></a>                  <a href="https://www.linkedin.com/in/kinshukphalke/" target="_blank"><i class="devicon-linkedin-plain"></i></a></h2> <Link to="/resume" target="_blank">Resume</Link> | <Link to="/blog">Blog</Link></div></div></div>
             <div style={{paddingTop: "50vh"}}></div>
+            <div id="text">
             <div id="about_me">   
           		<a id="About_me"><h2 className="display-4">About 
               </h2></a>
@@ -62,6 +63,7 @@ import NotFoundPage from '../pages/404'
             <div style={{paddingTop: "8vh"}}></div>
             <div className="pt-5 text-center">© 2021, Kinshuk Phalke</div>
             <div className="pt-5"></div>
+        </div>
         </div>
   		);
   }

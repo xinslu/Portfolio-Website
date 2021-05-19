@@ -17,7 +17,37 @@ html {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@media only screen and (min-width: 790px) {
+  #mobile-navbar{
+    display: none;
+}
+}
+@media only screen and (max-width: 790px){
+  #navbar-example2{
+    display: none;
+  }
+  .nav{
+    display: none;
+  }
+  h1{
+    font-size: 0.5rem;
+  }
+  #home h1{
+    font-size: 3.5rem;
+  }
+  #text p{
+    font-size: 1rem;
+  }
+  #text h2{
+    font-size: 3rem;
+  }
+  #text h4{
+    font-size: 1.5rem;
+  }
+  #navbarSupportedContent ul li{
+    font-size: 0.75rem;
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -41,7 +71,6 @@ html {
 .nav-item a.active{
   opacity: 1.0;
 }
-
 
 .App-link {
   color: #61dafb;

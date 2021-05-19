@@ -3,15 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Body from './body';
 import Scroll from './scrolling.jsx';
 import "devicon/devicon.min.css";
-import{
-    BrowserRouter as Router,
-    Route,
-    Switch,
-    Link,
-    Redirect
-} from 'react-router-dom';
-
-import NotFoundPage from '../pages/404'
+import "jquery/dist/jquery.min.js";
 
 class NavigationBar extends Component {
   render(){
@@ -27,11 +19,11 @@ class NavigationBar extends Component {
             minHeight: "100vh",
           }}
         >
-          <nav className="nav navbar-light bg-primary nav-pills d-flex flex-column h-100 justify-content-center" style={{position: "fixed", fontFamily: "Tahoma"}}>
+          <nav id="sideNav" className="nav navbar-light bg-primary nav-pills d-flex flex-column h-100 justify-content-center" style={{position: "fixed", fontFamily: "Tahoma"}} id="sideNav">
             <div className="nav-item">
               <a id="home link" href="#" className="nav-link active">
                 HOME
-              </a>
+              </a>  
             </div>
             <div className="nav-item">
               <a id="about link" href="#About_me" className="nav-link">
@@ -57,12 +49,54 @@ class NavigationBar extends Component {
               <a id="skills link"href="#Skills" className="nav-link">
                 SKILLS
               </a>
-            </div>
+            </div>  
            </nav>
         </div>
-        <div className="col" style={{boxShadow: "0 0px 15px #000"}}><Body /><Scroll /></div>
+        <div id="body" className="col" style={{boxShadow: "0 0px 15px #000"}}><Body /><Scroll /></div>
     </div>
-</div>
+            <div id="mobile-navbar">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style={{fontFamily: "Tahoma"}}>
+            <a class="navbar-brand" href="#">Kinshuk Phalke</a>
+            <button class="navbar-toggler justify-content-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent" className="collapse navbar-collapse">
+            <ul class="navbar-nav" style={{listStyleType: "none"}}>
+            <li className="nav-item">
+              <a id="home link mobile" href="#" className="nav-link active">
+                HOME
+              </a>  
+            </li>
+            <li className="nav-item">
+              <a id="about link mobile" href="#About_me" className="nav-link">
+                ABOUT
+              </a>
+            </li>
+            <li className="nav-item">
+              <a id="internships link mobile" href="#Internships" className="nav-link">
+                INTERNSHIPS
+              </a>
+            </li>
+            <li className="nav-item">
+              <a id="experience link mobile" href="#Experience" className="nav-link">
+                EXPERIENCE
+              </a>
+            </li>
+            <li className="nav-item">
+              <a id="awards link mobile" href="#Awards" className="nav-link">
+                AWARDS
+              </a>
+            </li>
+            <li className="nav-item">
+              <a id="skills link mobile"href="#Skills" className="nav-link">
+                SKILLS
+              </a>
+            </li>
+            </ul>
+            </div>
+           </nav>
+          </div>
+  </div>
   );
 }
 };
