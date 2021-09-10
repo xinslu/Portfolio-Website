@@ -21,7 +21,7 @@ class NavigationBar extends Component {
         >
           <nav id="sideNav" className="nav navbar-light bg-primary nav-pills d-flex flex-column h-100 justify-content-center" style={{position: "fixed", fontFamily: "Tahoma"}} id="sideNav">
             <div className="nav-item">
-              <a id="home link" href="#" className="nav-link active">
+              <a id="home link" href="#home" className="nav-link active">
                 HOME
               </a>  
             </div>
@@ -38,6 +38,11 @@ class NavigationBar extends Component {
             <div className="nav-item">
               <a id="experience link" href="#Experience" className="nav-link">
                 EXPERIENCE
+              </a>
+            </div>
+            <div className="nav-item">
+              <a id="projects link" href="#projects" className="nav-link">
+                PROJECTS
               </a>
             </div>
             <div className="nav-item">
@@ -80,6 +85,11 @@ class NavigationBar extends Component {
             <li className="nav-item">
               <a id="experience link mobile" href="#Experience" className="nav-link">
                 EXPERIENCE
+              </a>
+            </li>
+            <li className="nav-item">
+              <a id="projects link mobile" href="#Awards" className="nav-link">
+                AWARDS
               </a>
             </li>
             <li className="nav-item">
