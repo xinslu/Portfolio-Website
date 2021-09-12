@@ -3,10 +3,8 @@ import { Route, BrowserRouter as Router, Link } from 'react-router-dom';
 import NotFoundPage from '../pages/404';
 import './navbar.css';
 import "devicon/devicon.min.css";
-import { configureAnchors } from 'react-update-url-on-scroll'
-  
+
   const Body = () => {
-    configureAnchors({offset: 60})
   	return(
   			<div id="body">
           	<div id="home" style={{paddingTop: "33vh"}}><a id="home">
