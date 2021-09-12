@@ -64,7 +64,7 @@ export default class postBlog extends Component{
             timeStamp: new Date().toDateString()
         })
         if (this.state.password === 11059027813934){
-            const res=await fetch('http://localhost:5000/', {
+            const res=await fetch(process.env.REACT_APP_HEROKU_BACKEND, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
