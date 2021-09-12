@@ -15,7 +15,9 @@ import{
 import NotFoundPage from './pages/404'
 import NagivationBar from "./components/navbar.jsx"
 import Resume from "./pages/resume.jsx"
-import Blog from "./pages/blog.jsx"
+import Blog from "./pages/blog.jsx";
+import BlogPage from "./pages/blogPage.jsx";
+import postBlog from "./pages/makeBlog.jsx";
 function App() {
   return (
     <Router>
@@ -24,6 +26,8 @@ function App() {
             <Route exact path="/404" component={NotFoundPage} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/blog" component={Blog} />
+            <Route exact path="/blog/:id" component={BlogPage} />
+            <Route exact path="/post" component={postBlog} />
             <Redirect to="/404" />
         </Switch>
     </Router>
