@@ -23,7 +23,7 @@ export default class Blog extends Component{
 						<strong class="d-inline-block mb-2 text-primary">{blog.subject}</strong>
 						<Link to={`/blog/${blog._id}`}><h3 class="mb-0">{blog.title}</h3></Link>
 						<div class="mb-1 text-muted">{blog.timeStamp}</div>
-						<p class="lead card-text mb-auto">{blog.blogText}</p>
+						<p class="lead card-text mb-auto">{blog.preview}</p>
 					</div>
 				</div>
 				<div style={{marginRight: "5vh",marginLeft: "5vh"}}>
