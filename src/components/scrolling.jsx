@@ -11,7 +11,7 @@ export default class Scroll extends Component{
   var internshipstopPos = document.getElementById("internships").offsetTop-300;
   var experiencetopPos = document.getElementById("experience").offsetTop-300;
   var projectstopPos = document.getElementById("projects").offsetTop-300;
-  var awardstopPos = document.getElementById("awards").offsetTop-300;
+  var awardstopPos = document.getElementById("awards").offsetTop-200;
 
   window.onscroll = () => {
     let currentScrollPosition = window.pageYOffset;
