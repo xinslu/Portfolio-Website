@@ -29,12 +29,16 @@ export default class Scroll extends Component{
     	document.getElementById("about_me").classList.add("shadow-lg");
     	document.getElementById("about_me").classList.add("p-3");
     	document.getElementById("about_me").classList.add("mb-5");
+        document.getElementById("about_me").classList.add("ml-3");
+        document.getElementById("about_me").classList.add("rounded");
     } else { 
     	document.getElementById("about link").classList.remove("active");
         document.getElementById("about link mobile").classList.remove("active");
     	document.getElementById("about_me").classList.remove("shadow-lg");
     	document.getElementById("about_me").classList.remove("p-3");
     	document.getElementById("about_me").classList.remove("mb-5");
+        document.getElementById("about_me").classList.remove("ml-3");
+        document.getElementById("about_me").classList.remove("rounded");
     }
    	if (currentScrollPosition >= internshipstopPos && currentScrollPosition<experiencetopPos){
     	document.getElementById("internships link").classList.add("active");
@@ -42,12 +46,16 @@ export default class Scroll extends Component{
     	document.getElementById("internships").classList.add("shadow-lg");
     	document.getElementById("internships").classList.add("p-3");
     	document.getElementById("internships").classList.add("mb-5");
+        document.getElementById("about_me").classList.add("ml-3");
+        document.getElementById("about_me").classList.add("rounded");
     } else { 
     	document.getElementById("internships link").classList.remove("active");
         document.getElementById("internships link mobile").classList.remove("active");
     	document.getElementById("internships").classList.remove("shadow-lg");
     	document.getElementById("internships").classList.remove("p-3");
     	document.getElementById("internships").classList.remove("mb-5");
+        document.getElementById("about_me").classList.remove("ml-3");
+        document.getElementById("about_me").classList.remove("rounded");
     }
     if (currentScrollPosition >= experiencetopPos && currentScrollPosition<projectstopPos){
     	document.getElementById("experience link").classList.add("active");
@@ -55,12 +63,16 @@ export default class Scroll extends Component{
     	document.getElementById("experience").classList.add("shadow-lg");
     	document.getElementById("experience").classList.add("p-3");
     	document.getElementById("experience").classList.add("mb-5");
+        document.getElementById("about_me").classList.add("ml-3");
+        document.getElementById("about_me").classList.add("rounded");
     } else { 
     	document.getElementById("experience link").classList.remove("active");
         document.getElementById("experience link mobile").classList.remove("active");
     	document.getElementById("experience").classList.remove("shadow-lg");
     	document.getElementById("experience").classList.remove("p-3");
     	document.getElementById("experience").classList.remove("mb-5");
+        document.getElementById("about_me").classList.remove("ml-3");
+        document.getElementById("about_me").classList.remove("rounded");
     }
     if (currentScrollPosition >= projectstopPos && currentScrollPosition<awardstopPos){
         document.getElementById("projects link").classList.add("active");
@@ -68,12 +80,16 @@ export default class Scroll extends Component{
         document.getElementById("projects").classList.add("shadow-lg");
         document.getElementById("projects").classList.add("p-3");
         document.getElementById("projects").classList.add("mb-5");
+        document.getElementById("about_me").classList.add("ml-3");
+        document.getElementById("about_me").classList.add("rounded");
     } else {
         document.getElementById("projects link").classList.remove("active");
         document.getElementById("projects link mobile").classList.remove("active");
         document.getElementById("projects").classList.remove("shadow-lg");
         document.getElementById("projects").classList.remove("p-3");
         document.getElementById("projects").classList.remove("mb-5");
+        document.getElementById("about_me").classList.remove("ml-3");
+        document.getElementById("about_me").classList.remove("rounded");
     }
     if(currentScrollPosition >= awardstopPos && currentScrollPosition<skillstopPos) {
     	document.getElementById("awards link").classList.add("active");
@@ -81,13 +97,16 @@ export default class Scroll extends Component{
     	document.getElementById("awards").classList.add("shadow-lg");
     	document.getElementById("awards").classList.add("p-3");
     	document.getElementById("awards").classList.add("mb-5");
+        document.getElementById("about_me").classList.add("ml-3");
+        document.getElementById("about_me").classList.add("rounded");
     } else { 
     	document.getElementById("awards link").classList.remove("active");
         document.getElementById("awards link mobile").classList.remove("active");
     	document.getElementById("awards").classList.remove("shadow-lg");
     	document.getElementById("awards").classList.remove("p-3");
     	document.getElementById("awards").classList.remove("mb-5");
-
+        document.getElementById("about_me").classList.remove("ml-3");
+        document.getElementById("about_me").classList.remove("rounded");
     }
     if(currentScrollPosition >= skillstopPos) {
     	document.getElementById("skills link").classList.add("active");
@@ -95,13 +114,16 @@ export default class Scroll extends Component{
     	document.getElementById("skills").classList.add("shadow-lg");
     	document.getElementById("skills").classList.add("p-3");
     	document.getElementById("skills").classList.add("mb-5");
+        document.getElementById("about_me").classList.add("ml-3");
+        document.getElementById("about_me").classList.add("rounded");
     } else { 
     	document.getElementById("skills link").classList.remove("active");
         document.getElementById("skills link mobile").classList.remove("active");
     	document.getElementById("skills").classList.remove("shadow-lg");
     	document.getElementById("skills").classList.remove("p-3");
     	document.getElementById("skills").classList.remove("mb-5");
-
+        document.getElementById("about_me").classList.remove("ml-3");
+        document.getElementById("about_me").classList.remove("rounded");
     }
   }
 }
