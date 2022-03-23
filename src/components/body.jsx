@@ -25,6 +25,7 @@ import "devicon/devicon.min.css";
           	</div>
             <div style={{paddingTop: "20vh"}}></div>
             <div id="internships"><a id="Internships"><h2 className="display-4" style={{paddingTop: `20%`, marginTop: `-20%`}}>Internships</h2></a>
+            <h4 className="text-primary pt-2">NCR Corporation</h4><p className="lead">Coming up this Summer!</p>
             <h4 className="text-primary pt-2">Manipal Academy of Higher Education</h4><p className="lead"> I worked as an intern at the MAHE, Dubai Campus, where I learned <span className="text-primary">Arduino, and low level C++ Programming</span>. I spent some time learning about the basics of <span className="text-primary">micro-controllers, PWMs, and Oscillatory circuits</span>. I also learned and used <span className="text-primary">TensorFlow, Pandas, Matplotlib to make a basic image recognition software using a Kaggle dataset</span>. I delved deeper into understanding <span className="text-primary">Convoluted Neural Networks and Deep Learning</span>. Outside of coding, I designed a Bluetooth controlled car and interfaced it with an android mobile phone to be controlled remotely.</p></div>
             <div style={{paddingTop: "20vh"}}></div>
   			    <div id="experience"><a id="Experience"><h2 className="display-4" style={{paddingTop: `20%`, marginTop: `-20%`}}>Experience</h2></a>
@@ -57,13 +58,18 @@ import "devicon/devicon.min.css";
             <p className="lead"><h4 className="text-primary pt-2">Programming Languages</h4>
             <ul style={{listStyleType: "none"}}>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-python-plain"></i></h5> Python</li>
-            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-javascript-plain"></i></h5> JavaScript</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-java-plain"></i></h5> Java</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-javascript-plain"></i></h5> JavaScript</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-rust-plain"></i></h5> Rust</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-c-plain"></i></h5> C</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-solidity-plain"></i></h5> Solidity</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-bash-plain"></i></h5> Bash</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-cplusplus-plain"></i></h5> C++</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-html5-plain"></i></h5> HTML</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-css3-plain"></i></h5> CSS</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-csharp-plain"></i></h5> C#</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-latex-original"></i></h5> LaTeX</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-typescript-plain"></i></h5> TypeScript</li>
             </ul>
             <h4 className="text-primary pt-2">Frameworks</h4>
             <ul style={{listStyleType: "none"}}>
@@ -89,6 +95,9 @@ import "devicon/devicon.min.css";
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-figma-plain"></i></h5> Figma</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-xd-plain"></i></h5> Adobe XD</li>
             <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-matlab-plain"></i></h5> Matlab</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-unity-original"></i></h5> Unity</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-nginx-original"></i></h5> Nginx</li>
+            <li><h5 className="text-primary" style={{display: "inline"}}><i class="devicon-vim-plain"></i></h5> Vim</li>
             </ul>
             </p></div>
             <div style={{paddingTop: "8vh"}}></div>
