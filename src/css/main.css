@@ -1,0 +1,111 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  /*background-color: #333;*/
+  /*opacity:  0.0;*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 18vh;
+  font-family: "Poppins-SemiBold", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans";
+}
+
+
+#bg {
+  color: #000000;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgb(20, 15, 15);
+}
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /*float: left;*/
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-family: "Poppins-SemiBold", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", sans-serif;
+  transition: 0.5s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  /* background-color: #322c2c; */
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  /*position: relative;*/
+  /*text-align: center;*/
+  /*height: 100px;*/
+  /*color:rgb(213, 253, 251);*/
+  /*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+  padding-top:  13vh;
+}
+
+#startButton {
+  background-color: rgb(213, 253, 251);
+  border: none;
+  /*color: white;*/
+  padding: 10px 32px;
+  text-align: center;
+  /*text-decoration: none;*/
+  /*display: inline-block;*/
+  font-size: 20px;
+  border-radius: 0px;
+  transition-duration: 0.4s;
+  position: relative;
+}
+
+#tutorialButton {
+  /*background-color: #5e3e8e; /* Light Green */
+  /*border: none;*/
+  /*color: white;*/
+  padding: 10px 32px;
+  text-align: center;
+  /*text-decoration: none;*/
+  /*display: inline-block;*/
+  font-size: 20px;
+  border-radius: 0px;
+  transition-duration: 0.4s;
+  position: relative;
+  margin-left: 100px;
+}
+
+.abouttext {
+  /*position: relative;*/
+  /*text-align: center;*/
+  /*  height: 200px;*/
+  /*width: 90%;*/
+  /*color:rgb(213, 253, 251);*/
+  /*padding-top: 5vh;*/
+  font-size: 15px;
+  padding-left: 43vh;
+  padding-right: 43vh;
+  /*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+}
+
+
