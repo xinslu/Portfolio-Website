@@ -1,8 +1,17 @@
 #about {
    position: relative;
    background: #000524;
-   margin-top: -1%;
-   padding-top: 0px;
+   margin-top: -0.4%;
+   padding-top: 5%;
+   padding-bottom: 5%;
    /*overflow: hidden;*/
    /*z-index: 999;*/
+}
+
+#about .profile-pic {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   /*border: 2px solid white;*/
 }
