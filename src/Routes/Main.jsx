@@ -6,13 +6,23 @@ import{
     Link,
     Redirect
 } from 'react-router-dom';
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import ParticlesBg from "particles-bg";
+import About from "./About.jsx"
+
 export default function Main() {
+    let style = {
+      position: "relative",
+      width: `100%`,
+      height: `100%`,
+      top: 0,
+      left: 0,
+    }
   return (
-    <div>
+    <div style = {{height:"100vh"}}>
+      <header>
       <div id="bg">
-        <ParticlesBg type="circle" bg={true} num={17}/>
+        <ParticlesBg type="circle" bg={style} num={17}/>
       </div>
       <div>
       </div>
@@ -59,6 +69,9 @@ export default function Main() {
           </button>
         </a>
       </center>
+      </header>
+      <div class="clear"></div>
+      <About />
       </div>
   )
 }
