@@ -23,7 +23,7 @@ function App() {
     <Router>
         <Switch>
             <Route exact path='/' component={Main} />
-{/*            <Route exact path="/404" component={NotFoundPage} />
+{/*          <Route exact path="/404" component={NotFoundPage} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/blog/:id" component={BlogPage} />
