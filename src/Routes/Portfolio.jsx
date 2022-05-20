@@ -182,6 +182,10 @@ export default function Portfolio() {
                         field: "flask-plain",
                         title: "Flask",
                     },
+                    {
+                        field: "androidstudio-plain",
+                        title: "Android Studio",
+                    }
                 ],
                 [
                     {
@@ -216,6 +220,10 @@ export default function Portfolio() {
                         field: "django-plain",
                         title: "django",
                     },
+                    {
+                        field: "socketio-plain",
+                        title: "Socket.IO",
+                    },
                 ],
             ],
         },
@@ -243,6 +251,10 @@ export default function Portfolio() {
                         field: "pytorch-original",
                         title: "PyTorch",
                     },
+                    {
+                        field: "opencv-plain",
+                        title: "OpenCV",
+                    },
                 ],
             ],
         },
@@ -265,6 +277,67 @@ export default function Portfolio() {
                 ],
             ],
         },
+        {
+            title: "Technologies",
+            rows: [
+                [
+                    {
+                        field: "git-plain",
+                        title: "Git",
+                    },
+                    {
+                        field: "github-plain",
+                        title: "GitHub",
+                    },
+                    {
+                        field: "docker-plain",
+                        title: "Docker",
+                    },
+                    {
+                        field: "unity-original",
+                        title: "Unity",
+                    },
+                    {
+                        field: "vim-plain",
+                        title: "Vim",
+                    },
+                    {
+                        field: "linux-plain",
+                        title: "Linux",
+                    },
+                ],
+                [
+                     {
+                        field: "figma-plain",
+                        title: "Figma",
+                    },
+                    {
+                        field: "xd-plain",
+                        title: "AdobeXD",
+                    },
+                    {
+                        field: "matlab-plain",
+                        title: "Matlab",
+                    },
+                    {
+                        field: "nginx-plain",
+                        title: "nginx",
+                    },
+                    {
+                        field: "kubernetes-plain",
+                        title: "Kubernetes",
+                    },
+                    {
+                        field: "raspberrypi-line",
+                        title: "Raspberry Pi",
+                    },
+                    {
+                        field: "heroku-plain",
+                        title: "Heroku",
+                    }
+                ]
+            ]
+        }
     ];
     let skillsString = "";
     skills.map((skill) => {
