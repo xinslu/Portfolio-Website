@@ -1,5 +1,6 @@
 import "../css/portfolio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 export default function Portfolio() {
     let experiences = [
         {
@@ -185,7 +186,7 @@ export default function Portfolio() {
                     {
                         field: "androidstudio-plain",
                         title: "Android Studio",
-                    }
+                    },
                 ],
                 [
                     {
@@ -273,7 +274,7 @@ export default function Portfolio() {
                     {
                         field: "redis-plain",
                         title: "Redis",
-                    }
+                    },
                 ],
             ],
         },
@@ -307,7 +308,7 @@ export default function Portfolio() {
                     },
                 ],
                 [
-                     {
+                    {
                         field: "figma-plain",
                         title: "Figma",
                     },
@@ -334,10 +335,10 @@ export default function Portfolio() {
                     {
                         field: "heroku-plain",
                         title: "Heroku",
-                    }
-                ]
-            ]
-        }
+                    },
+                ],
+            ],
+        },
     ];
     let skillsString = "";
     skills.map((skill) => {
@@ -488,7 +489,11 @@ export default function Portfolio() {
                                         <i
                                             className="text-muted text-small h5 fa fa-external-link"
                                             aria-hidden="true"
-                                        ></i>
+                                        >
+                                            <FontAwesomeIcon
+                                                icon={faExternalLink}
+                                            />
+                                        </i>
                                     </a>
                                 </h3>
                                 <p className="info fw-light font-monospace">
