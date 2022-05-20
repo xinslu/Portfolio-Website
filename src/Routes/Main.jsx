@@ -12,6 +12,7 @@ import About from "./About.jsx";
 import Portfolio from "./Portfolio.jsx";
 import Footer from "./Footer.jsx";
 import React, { useEffect, useState } from "react";
+import Scroll from "./Scrolling.jsx"
 
 export default function Main() {
   let style = {
@@ -21,8 +22,21 @@ export default function Main() {
     top: 0,
     left: 0,
   };
-  const [offset, setOffset] = useState(0);
-
+ const [visible, setVisible] = useState(false);
+ const [scrollPosition, setScrollPosition] = useState(0);
+  var handleScroll = function () {
+    console.log('here');
+    const scrollPos = window.pageYOffset;
+    setScrollPosition(scrollPos);
+    const visible = scrollPosition > document.getElementById("resume").offsetTop;
+    setVisible(visible);
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div style={{ height: "100vh" }}>
@@ -32,7 +46,7 @@ export default function Main() {
         </div>
         <div></div>
 
-        <div className="topnav">
+        <div id="topnav" className={`topnav ${scrollPosition > 1 ? "bg-dark" : ""}`}>
           <a className="active fw-light font-monospace" href="/">
             HOME
           </a>

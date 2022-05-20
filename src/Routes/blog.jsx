@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../css/blog.css";
 import Footer from "./Footer.jsx";
 
 export default class Blog extends Component {
@@ -91,7 +92,9 @@ export default class Blog extends Component {
 							</div>
 						))}
 					</div>
-					<Footer />
+					<div style={{bottom: `0`, position: `absolute`, width: `100%`}}>
+						<Footer />
+					</div>
 				</div>
 			);
 		} else {
