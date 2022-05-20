@@ -413,7 +413,7 @@ export default function Portfolio() {
                             fontFamily: `Sans-Serif`,
                         }}
                     >
-                        Bruh
+                        Lorem Ipsum
                     </p>
                 </div>
             </div>
