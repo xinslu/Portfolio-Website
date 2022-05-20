@@ -14,7 +14,8 @@ html, body {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0px;
+  padding-top: 10px;
   margin-bottom: 18vh;
   font-family: "Poppins-SemiBold", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans";

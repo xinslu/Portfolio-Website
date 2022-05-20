@@ -34,6 +34,10 @@
 }
 
 .highlight {
-   color: #0762f9;
+   color: #0040ab;
    font-weight: bold;
+}
+
+.skills {
+   padding-right: 10%;
 }
