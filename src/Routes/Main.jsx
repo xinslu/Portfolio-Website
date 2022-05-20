@@ -32,7 +32,7 @@ export default function Main() {
   }, []);
   return (
     <div style={{ height: "100vh" }}>
-      <header>
+      <header id="home">
         <div id="bg">
           <ParticlesBg type="circle" bg={style} num={17} />
         </div>

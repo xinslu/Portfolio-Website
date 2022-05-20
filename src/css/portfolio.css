@@ -32,3 +32,8 @@
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
+
+.highlight {
+   color: #0762f9;
+   font-weight: bold;
+}
