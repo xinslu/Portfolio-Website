@@ -18,6 +18,7 @@ html, body {
   margin-bottom: 18vh;
   font-family: "Poppins-SemiBold", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans";
+  z-index: 999;
 }
 
 header {
