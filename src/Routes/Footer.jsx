@@ -11,13 +11,13 @@ export default function Footer() {
               </div>
             <div className="row justify-content-md-center mt-5">
                 <div className="col col-auto">
-                    <i class="display-6 devicon-linkedin-plain"></i>
+                    <a href="https://www.linkedin.com/in/kinshukphalke/" target="_blank" style={{textDecoration: 'none'}}><i class="display-6 devicon-linkedin-plain"></i></a>
                 </div>
                 <div className="col col-auto">
-                    <i class="display-6 devicon-github-plain"></i>
+                    <a href="https://github.com/xinslu" target="_blank" style={{textDecoration: 'none'}}><i class="display-6 devicon-github-plain"></i></a>
                 </div>
                 <div className="col col-auto">
-                    <i class="display-6 devicon-twitter-plain"></i>
+                    <a href="https://twitter.com/phalkekinshuk" target="_blank" style={{textDecoration: 'none'}}><i class="display-6 devicon-twitter-plain"></i></a>
                 </div>
             <div className="mb-3 mt-3"></div>
             <div className="row justify-content-md-center mb-5">
