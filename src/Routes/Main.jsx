@@ -11,7 +11,7 @@ import ParticlesBg from "particles-bg";
 import About from "./About.jsx";
 import Portfolio from "./Portfolio.jsx";
 import Footer from "./Footer.jsx";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Scroll from "./Scrolling.jsx"
 
 export default function Main() {
@@ -24,29 +24,30 @@ export default function Main() {
   };
  const [visible, setVisible] = useState(false);
  const [scrollPosition, setScrollPosition] = useState(0);
-  var handleScroll = function () {
-    console.log('here');
-    const scrollPos = window.pageYOffset;
-    setScrollPosition(scrollPos);
-    const visible = scrollPosition > document.getElementById("resume").offsetTop;
+  const handleScroll = (event) => {
+    console.log("here");
+    let scrollPos = window.pageYOffset;
+    console.log(scrollPos)
+    const visible = scrollPos > document.getElementById("resume").offsetTop;
+    // let visible = scrollPos > 100;
     setVisible(visible);
-  }
+  };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, true);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+     window.removeEventListener("scroll", handleScroll, true);
+    }
+  }, [handleScroll]);
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "100vh"}}>
       <header id="home">
         <div id="bg">
           <ParticlesBg type="circle" bg={style} num={17} />
         </div>
         <div></div>
 
-        <div id="topnav" className={`topnav ${scrollPosition > 1 ? "bg-dark" : ""}`}>
+        <div id="topnav" className={`topnav ${visible ? "bg-dark" : ""}`}>
           <a className="active fw-light font-monospace" href="/">
             HOME
           </a>
