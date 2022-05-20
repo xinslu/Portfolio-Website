@@ -213,6 +213,8 @@ export default function Portfolio() {
                         field: "gatsby-plain",
                         title: "Gatsby",
                     },
+                ],
+                [
                     {
                         field: "handlebars-plain",
                         title: "Handlebar.js",
@@ -225,7 +227,7 @@ export default function Portfolio() {
                         field: "socketio-plain",
                         title: "Socket.IO",
                     },
-                ],
+                ]
             ],
         },
         {

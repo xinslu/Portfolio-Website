@@ -1,7 +1,13 @@
 html, body {
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
   overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+
 }
 
 /* Add a black background color to the top navigation */
@@ -17,6 +23,8 @@ html, body {
   margin-top: 0px;
   padding-top: 10px;
   margin-bottom: 18vh;
+  margin-left: 0;
+  padding-left: 0;
   font-family: "Poppins-SemiBold", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans";
   z-index: 999;
@@ -120,8 +128,6 @@ header {
   /*color:rgb(213, 253, 251);*/
   /*padding-top: 5vh;*/
   font-size: 15px;
-  padding-left: 43vh;
-  padding-right: 43vh;
   /*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
 }
 
