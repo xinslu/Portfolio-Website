@@ -24,12 +24,13 @@ export default function Main() {
     left: 0,
   };
  const [visible, setVisible] = useState(false);
+ const [background, setBackground] = useState(false);
  const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = (event) => {
     let scrollPos = window.pageYOffset;
-    console.log(scrollPos)
-    const visible = scrollPos > document.getElementById("resume").offsetTop;
-    // let visible = scrollPos > 100;
+    const background = scrollPos > document.getElementById("about").offsetTop;
+    const visible = !(scrollPos > (document.getElementById("fullName").offsetTop - 100) && !background);
+    setBackground(background);
     setVisible(visible);
   };
   useEffect(() => {
@@ -46,7 +47,7 @@ export default function Main() {
           <ParticlesBg type="circle" bg={style} num={17} />
         </div>
         <div></div>
-        <div id="topnav" className={`topnav ${visible ? "bg-dark pb-2" : ""}`}>
+        <div id="topnav" className={`topnav ${background ? "bg-dark pb-2" : ""} ${visible ? "" : "invisible"}`}>
           <a className="active fw-light font-monospace" href="/">
             HOME
           </a>
@@ -59,7 +60,7 @@ export default function Main() {
         </div>
         <center>
           <p className="position-relative display-1 text-white font-weight-light font-monospace title mt-5">
-            Kinshuk Phalke
+            <div id="fullName">Kinshuk Phalke</div>
           </p>
         </center>
         <div>

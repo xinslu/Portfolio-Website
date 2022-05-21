@@ -416,7 +416,9 @@ export default function Portfolio() {
                             fontFamily: `Sans-Serif`,
                         }}
                     >
-                        Lorem Ipsum
+                        <em> GPA: </em> 4.0 <br />
+                        <em className="font-weight-bold"> Concentration: </em> Intelligence, Systems and Architecture <br />
+                        <em>Coursework: </em>
                     </p>
                 </div>
             </div>

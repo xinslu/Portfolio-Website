@@ -28,15 +28,15 @@ export default class Blog extends Component {
 						<h1 className="display-4 text-center justify-content-center">
 							<strong style={{fontFamily: 'VT323'}}>Ready Progammer One</strong>
 						</h1>
-						<h3>
+						<p className="font-monospace h4">
 							<small class="text-muted">
 								A blog, by{" "}
 								<span className="text-primary">
-									<Link to="/">Kinshuk Phalke</Link>
+									<Link to="/" style={{textDecoration: "none"}}>Kinshuk Phalke</Link>
 								</span>
 								, where I post whatever's on my mind.
 							</small>
-						</h3>
+						</p>
 					</div>
 					<div>
 						<hr
