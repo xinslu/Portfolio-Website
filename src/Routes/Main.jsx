@@ -46,7 +46,6 @@ export default function Main() {
           <ParticlesBg type="circle" bg={style} num={17} />
         </div>
         <div></div>
-
         <div id="topnav" className={`topnav ${visible ? "bg-dark pb-2" : ""}`}>
           <a className="active fw-light font-monospace" href="/">
             HOME
