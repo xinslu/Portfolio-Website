@@ -36,6 +36,18 @@ export default function Portfolio() {
     ];
     let projects = [
         {
+            title: "DetectCNN",
+            link: "https://github.com/xinslu/DetectCNN",
+            tech: "OCaml, Owl, Eigen",
+            description: `DetectCNN is my implementation of the <span class="highlight">Mask Region Based Convolutional Neural Network</span> Paper, written in OCaml using Owl and Eigen. Worked on sorting <span class="highlight">LLVM</span> issues in Owl on <span class="highlight">Darwin M1</span> by contributing to the Github issue. Read and summarized findings of the <span class="highlight">  R-CNN, Fast R-CNN, Faster R-CNN Papers </span>. Studied <span class="highlight"> Instance and Semantic Segmentation approaches, Region Proposal Techniques </span> and <span class="highlight"> Feature Extraction Methods. </span>`,
+        },
+        {
+            title: "Enhance",
+            link: "https://github.com/xinslu/Enhance",
+            tech: "Python, Tensorflow, Keras",
+            description: `Enhance is my implementation of the <span class="highlight">Super Resolution Generative Adverserial Network</span> Paper using tensorflow, which uses a ResNet with a <span class="highlight">Perceptual Loss function</span> based on discriminator probability and the euclidean distance between the feature representations of a <span class="highlight">reconstructed image</span> and <span class="highlight">reference image</span>, to achieve a high level of super resolution. Ran and trained the model on the DIV2K dataset achieving perceptible improvements in image quality on the <span class="highlight">DIV2K dataset with downscale factor 4 </span>`,
+        },
+        {
             title: "DeusCL",
             link: "https://github.com/xinslu/deusCL",
             tech: "Python",
