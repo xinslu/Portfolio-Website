@@ -9,6 +9,7 @@ footer {
    position: relative;
    padding-bottom: 10px;
    overflow-x: hidden;
+   z-index: 999;
 }
 
 footer a, footer a:visited { color: #525252; }
@@ -57,7 +58,7 @@ footer .social-links li:first-child { margin-left: 0; }
 /* Go To Top Button */
 #go-top {
    position: absolute;
-   top: -24px;
+   top: 10px;
    left: 50%;
    margin-left: -30px;
 }

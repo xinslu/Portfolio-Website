@@ -5,7 +5,7 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
     return (
         <footer>
-            <div className="mb-5" id="go-top">
+            {/*<div className="mb-5" id="go-top">
                 <a
                     className="smoothscroll"
                     title="Back to Top"
@@ -16,7 +16,7 @@ export default function Footer() {
                         <FontAwesomeIcon icon={faArrowUp} />
                     </i>
                 </a>
-            </div>
+            </div>*/}
             <div className="row justify-content-md-center mt-5">
                 <div className="col col-auto">
                     <a
