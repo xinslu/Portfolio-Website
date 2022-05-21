@@ -65,7 +65,7 @@ export default class Blog extends Component {
 										<strong class="d-inline-block mb-2 text-primary">
 											{blog.subject}
 										</strong>
-										<Link to={`/blog/${blog._id}`}>
+										<Link to={`/blog/${blog._id}`} style={{textDecoration: "none"}}>
 											<h3 class="mb-0">{blog.title}</h3>
 										</Link>
 										<div class="mb-1 text-muted">
