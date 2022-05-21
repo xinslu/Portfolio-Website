@@ -416,9 +416,10 @@ export default function Portfolio() {
                             fontFamily: `Sans-Serif`,
                         }}
                     >
-                        <em> GPA: </em> 4.0 <br />
-                        <em className="font-weight-bold"> Concentration: </em> Intelligence, Systems and Architecture <br />
-                        <em>Coursework: </em>
+                        <span className="highlight fst-italic"> GPA: </span> 4.0 (Dean's List, Faculty Honors) <br />
+                        <span className="highlight fst-italic"> Concentration: </span> Intelligence, Systems and Architecture<br />
+                        <span className="highlight fst-italic"> Coursework: </span> Datastructures and Algorithms, Honors Discrete Algebra, Honors Linear Algebra, Combinatorics, Probability and Statistics <br />
+                        <span className="highlight fst-italic"> Clubs: </span> Dependently-Typed, The Agency, VGDev
                     </p>
                 </div>
             </div>
