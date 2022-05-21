@@ -416,7 +416,10 @@ export default function Portfolio() {
                             fontFamily: `Sans-Serif`,
                         }}
                     >
-                        Lorem Ipsum
+                        <span className="highlight fst-italic"> GPA: </span> 4.0 (Dean's List, Faculty Honors) <br />
+                        <span className="highlight fst-italic"> Concentration: </span> Intelligence, Systems and Architecture<br />
+                        <span className="highlight fst-italic"> Coursework: </span> Datastructures and Algorithms, Honors Discrete Algebra, Honors Linear Algebra, Combinatorics, Probability and Statistics <br />
+                        <span className="highlight fst-italic"> Clubs: </span> Dependently-Typed, The Agency, VGDev
                     </p>
                 </div>
             </div>
