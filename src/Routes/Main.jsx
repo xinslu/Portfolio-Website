@@ -17,15 +17,15 @@ import Scroll from "./Scrolling.jsx"
 export default function Main() {
   let style = {
     position: "relative",
-    width: `100%`,
+    width: `105%`,
     height: `100%`,
+    padding: `0`,
     top: 0,
     left: 0,
   };
  const [visible, setVisible] = useState(false);
  const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = (event) => {
-    console.log("here");
     let scrollPos = window.pageYOffset;
     console.log(scrollPos)
     const visible = scrollPos > document.getElementById("resume").offsetTop;
@@ -40,14 +40,14 @@ export default function Main() {
   }, [handleScroll]);
 
   return (
-    <div style={{ height: "100vh"}}>
+    <div style={{ height: "100vh", width: `100%`, padding: `0`}}>
       <header id="home">
         <div id="bg">
           <ParticlesBg type="circle" bg={style} num={17} />
         </div>
         <div></div>
 
-        <div id="topnav" className={`topnav ${visible ? "bg-dark" : ""}`}>
+        <div id="topnav" className={`topnav ${visible ? "bg-dark pb-2" : ""}`}>
           <a className="active fw-light font-monospace" href="/">
             HOME
           </a>

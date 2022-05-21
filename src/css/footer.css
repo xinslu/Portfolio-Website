@@ -8,6 +8,7 @@ footer {
    text-align: center;
    position: relative;
    padding-bottom: 10px;
+   overflow-x: hidden;
 }
 
 footer a, footer a:visited { color: #525252; }

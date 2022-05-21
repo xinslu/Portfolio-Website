@@ -131,4 +131,10 @@ header {
   /*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
 }
 
+canvas.particles-bg-canvas-self {
+  padding-right: 0;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
 
