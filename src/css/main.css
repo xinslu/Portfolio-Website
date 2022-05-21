@@ -73,7 +73,7 @@ header {
   font-size: 17px;
   font-family: "Poppins-SemiBold", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", sans-serif;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 /* Change the color of links on hover */

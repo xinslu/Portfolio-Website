@@ -26,17 +26,17 @@ export default class Blog extends Component {
 						}}
 					>
 						<h1 className="display-4 text-center justify-content-center">
-							<strong>Ready Progammer One</strong>
+							<strong style={{fontFamily: 'VT323'}}>Ready Progammer One</strong>
 						</h1>
-						<h3>
+						<p className="font-monospace h4">
 							<small class="text-muted">
 								A blog, by{" "}
 								<span className="text-primary">
-									<Link to="/">Kinshuk Phalke</Link>
+									<Link to="/" style={{textDecoration: "none"}}>Kinshuk Phalke</Link>
 								</span>
 								, where I post whatever's on my mind.
 							</small>
-						</h3>
+						</p>
 					</div>
 					<div>
 						<hr
@@ -65,7 +65,7 @@ export default class Blog extends Component {
 										<strong class="d-inline-block mb-2 text-primary">
 											{blog.subject}
 										</strong>
-										<Link to={`/blog/${blog._id}`}>
+										<Link to={`/blog/${blog._id}`} style={{textDecoration: "none"}}>
 											<h3 class="mb-0">{blog.title}</h3>
 										</Link>
 										<div class="mb-1 text-muted">
