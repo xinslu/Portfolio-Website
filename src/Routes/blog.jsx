@@ -26,7 +26,7 @@ export default class Blog extends Component {
 						}}
 					>
 						<h1 className="display-4 text-center justify-content-center">
-							<strong>Ready Progammer One</strong>
+							<strong style={{fontFamily: 'VT323'}}>Ready Progammer One</strong>
 						</h1>
 						<h3>
 							<small class="text-muted">
