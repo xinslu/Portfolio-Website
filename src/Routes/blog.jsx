@@ -12,7 +12,7 @@ export default class Blog extends Component {
 	}
 	render() {
 		var blogPosts = this.state.blogPosts;
-		if (blogPosts) {
+		if (blogPosts != {} || blogPosts != null) {
 			return (
 				<div>
 					<div
@@ -103,7 +103,8 @@ export default class Blog extends Component {
 	}
 
 	async componentDidMount() {
-		const res = await fetch(
+		try{
+			const res = await fetch(
 			process.env.REACT_APP_HEROKU_BACKEND + "getblogpost",
 			{
 				method: "POST",
@@ -114,8 +115,12 @@ export default class Blog extends Component {
 					id: "",
 				}),
 			}
-		);
-		const jsonData = await res.json();
-		this.setState({ blogPosts: jsonData.results });
+			);
+			const jsonData = await res.json();
+			this.setState({ blogPosts: jsonData.results });
+		} catch {
+			this.setState({ blogPosts: [{}] });
+		}
+
 	}
 }
