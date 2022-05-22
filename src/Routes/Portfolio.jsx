@@ -36,6 +36,12 @@ export default function Portfolio() {
     ];
     let projects = [
         {
+            title: "Speech2Code",
+            link: "https://github.com/saisree27/speechtocode",
+            tech: "Python, ReactJS, Express.js",
+            description: `Speech2Code is a <span class="highlight"> turing-complete website</span> that helps translate a spoken english like <span class="highlight"> meta language </span> to Java, JavaScript and Python, using a <span class="highlight"> language agnostic class-based abstraction system </span> that enables easy addtion of language support. The speech transcription is done using the <span class="highlight"> AssemblyAI API </span>. I worked on making the Programming Language Middle-End and worked on making CSS changes on the front-end website.`,
+        },
+        {
             title: "DetectCNN",
             link: "https://github.com/xinslu/DetectCNN",
             tech: "OCaml, Owl, Eigen",
