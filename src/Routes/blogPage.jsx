@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
+import Footer from "./Footer.jsx";
 
 export default class BlogPage extends Component {
     constructor(props) {
@@ -18,11 +19,13 @@ export default class BlogPage extends Component {
         const { validBlog, subject, title, text, timeStamp } = this.state;
         if (validBlog) {
             return (
+                <div>
                 <div
                     style={{
                         marginLeft: `15%`,
                         marginTop: `4%`,
                         marginRight: `15%`,
+                        marginBottom: `5%`
                     }}
                 >
                     <strong>
@@ -44,6 +47,8 @@ export default class BlogPage extends Component {
                             }}
                          / >
                     </div>
+                    </div>
+                    <Footer />
                 </div>
             );
         } else {
