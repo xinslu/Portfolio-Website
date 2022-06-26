@@ -54,7 +54,7 @@ export default class Blog extends Component {
 									style={{ alignItems: "center" }}
 								>
 									<div
-										id={blog._id}
+										id={blog._id.$oid}
 										class="p-4 w-100 d-flex flex-column position-static"
 										style={{
 											marginRight: "15vh",
@@ -65,7 +65,7 @@ export default class Blog extends Component {
 										<strong class="d-inline-block mb-2 text-primary">
 											{blog.subject}
 										</strong>
-										<Link to={`/blog/${blog._id}`} style={{textDecoration: "none"}}>
+										<Link to={`/blog/${blog._id.$oid}`} style={{textDecoration: "none"}}>
 											<h3 class="mb-0">{blog.title}</h3>
 										</Link>
 										<div class="mb-1 text-muted">
@@ -110,6 +110,7 @@ export default class Blog extends Component {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
+					"Accept": "*/*"
 				},
 				body: JSON.stringify({
 					id: "",
@@ -118,7 +119,9 @@ export default class Blog extends Component {
 			);
 			const jsonData = await res.json();
 			this.setState({ blogPosts: jsonData.results });
-		} catch {
+			console.log(jsonData)
+		} catch(err) {
+			console.log("here "+err + " "+ process.env.REACT_APP_HEROKU_BACKEND + "getblogpost",)
 			this.setState({ blogPosts: [{}] });
 		}
 
