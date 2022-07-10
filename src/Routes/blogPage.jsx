@@ -20,33 +20,35 @@ export default class BlogPage extends Component {
         if (validBlog) {
             return (
                 <div>
-                <div
-                    style={{
-                        marginLeft: `15%`,
-                        marginTop: `4%`,
-                        marginRight: `15%`,
-                        marginBottom: `5%`
-                    }}
-                >
-                    <strong>
-                        <Link to="/blog">Blog</Link>
-                    </strong>
-                    <br />
-                    <div className="container ml-5 pl-5">
-                        <p class="mt-5 ml-5 lead text-primary">{subject}</p>
-                        <h1 className="display-3 ml-5">{title}</h1>
-                        <h6 className="text-muted ml-5 mt-2">{timeStamp}</h6>
-                        <p
-                            className="lead ml-5 mt-5 mr-5"
-                            style={{
-                                whiteSpace: "pre-line",
-                                textAlign: `justify`,
-                            }}
-                            dangerouslySetInnerHTML={{
-                                __html: text,
-                            }}
-                         / >
-                    </div>
+                    <div
+                        style={{
+                            marginLeft: `15%`,
+                            marginTop: `4%`,
+                            marginRight: `15%`,
+                            marginBottom: `5%`,
+                        }}
+                    >
+                        <strong>
+                            <Link to="/blog">Blog</Link>
+                        </strong>
+                        <br />
+                        <div className="container ml-5 pl-5">
+                            <p class="mt-5 ml-5 lead text-primary">{subject}</p>
+                            <h1 className="display-3 ml-5">{title}</h1>
+                            <h6 className="text-muted ml-5 mt-2">
+                                {timeStamp}
+                            </h6>
+                            <p
+                                className="lead ml-5 mt-5 mr-5"
+                                style={{
+                                    whiteSpace: "pre-line",
+                                    textAlign: `justify`,
+                                }}
+                                dangerouslySetInnerHTML={{
+                                    __html: text,
+                                }}
+                            />
+                        </div>
                     </div>
                     <Footer />
                 </div>
