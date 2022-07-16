@@ -8,10 +8,6 @@ let skills = [
                     title: "Python",
                 },
                 {
-                    field: "java-plain",
-                    title: "Java",
-                },
-                {
                     field: "javascript-plain",
                     title: "JavaScript",
                 },
@@ -20,16 +16,16 @@ let skills = [
                     title: "Rust",
                 },
                 {
+                    field: "go-plain",
+                    title: "Golang",
+                },
+                {
+                    field: "java-plain",
+                    title: "Java",
+                },
+                {
                     field: "c-plain",
                     title: "C",
-                },
-                {
-                    field: "html5-plain",
-                    title: "HTMl",
-                },
-                {
-                    field: "css3-plain",
-                    title: "CSS",
                 },
                 {
                     field: "csharp-plain",
@@ -88,6 +84,10 @@ let skills = [
                 {
                     field: "nodejs-plain",
                     title: "Node.js",
+                },
+                {
+                    field: "nextjs-plain",
+                    title: "NextJS",
                 },
                 {
                     field: "firebase-plain",
