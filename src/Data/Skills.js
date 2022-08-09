@@ -76,7 +76,6 @@ let skills = [
                     field: "express-original",
                     title: "Express.js",
                 },
-
                 {
                     field: "react-plain",
                     title: "React Native",
@@ -221,6 +220,14 @@ let skills = [
                 {
                     field: "linux-plain",
                     title: "Linux",
+                },
+                {
+                    field: "googlecloud-plain",
+                    title: "GCP",
+                },
+                {
+                    field: "amazonwebservices-plain",
+                    title: "AWS",
                 },
             ],
             [

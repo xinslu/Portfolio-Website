@@ -21,7 +21,7 @@ let projects = [
         title: "DeusCL",
         link: "https://github.com/xinslu/deusCL",
         tech: "Python",
-        description: `DeusCL is a <span class="highlight">Common LISP</span> implementation with a REPL built in <span class="highlight">Rust</span> . Built on a memory-efficient, memory-safe and fast REPL using <span class="highlight">Rust references and borrowing principles</span>. Made a <span class="highlight">Recursive Descent Parser</span> and a Scanner to <span class="highlight">parse S-Expressions</span>. Added functionality for addtional operators.`,
+        description: `DeusCL is a memory-safe <span class="highlight">Common LISP</span> implementation with a REPL built in <span class="highlight">Rust</span> . Built a handwritten <span class="highlight">recursive descent parser </span> and a visitor pattern dependent evaluator. Added a basic <span class="highlight">type inference</span>, <span class="highlight">type checking </span> and <span class="highlight">error handling system</span>. Added <span class="highlight">dynamic evaluation of functional environment </span> and parameters. Wrote a simple <span class="highlight">garbage collector </span> and environment cleaner. Built a frontend in <span class="highlight">Yew Framework </span>in Rust to enable users to use a web based simulation of REPL.`,
     },
     {
         title: "PaperPlanes",
