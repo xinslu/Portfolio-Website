@@ -9,7 +9,7 @@ let experiences = [
         title: "Notitia",
         job: "Software Developer",
         duration: "October 2021 - Present",
-        description: `I am working in a start up at Gerogia Tech in building a MVP. I worked on developing a <span class="highlight">Full-Stack Website</span> and working on fine tuning an NLP model for more accurate results. I worked on a machine learning pipeline that uses <span class="highlight">UMAP</span> to map the relevant word embeddings of pieces of text onto a 2D graph, <span class="highlight">FAISS</span> to effieciently cluster these texts and an <span class="highlight">LDA model</span> on these clusters to find accurate topics for these. In the frontend, I worked on optimizing WordCloud of test using <span class="highlight">ReactFlow</span>.`,
+        description: `I am working in a start up at Georgia Tech in building a MVP. I worked on developing a <span class="highlight">Full-Stack Website</span> and working on fine tuning an NLP model for more accurate results. I worked on a machine learning pipeline that uses <span class="highlight">UMAP</span> to map the relevant word embeddings of pieces of text onto a 2D graph, <span class="highlight">FAISS</span> to effieciently cluster these texts and an <span class="highlight">LDA model</span> on these clusters to find accurate topics for these. In the frontend, I worked on optimizing WordCloud of test using <span class="highlight">ReactFlow</span>.`,
     },
     {
         title: "BITS Pilani, Dubai",
