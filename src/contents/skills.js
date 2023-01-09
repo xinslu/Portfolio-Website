@@ -243,6 +243,6 @@ let skills = [
                     title: "Heroku",
                 },
         ],
-    },
+    }
 ];
 export default skills;
