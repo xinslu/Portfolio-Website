@@ -1,0 +1,72 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import skills from "@contents/skills.js";
+---
+<style is:global>
+    .tech {
+       color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
+       font-weight: bold;
+    }
+
+    .skilltable {
+        border-style: none !important;
+        border: none !important;
+        border-width: 0px !important;
+    }
+
+    .icons {
+       font-size: 40px !important;
+       color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
+    }
+</style>
+<Layout title="Tech | Kinshuk Phalke">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <Header activeNav="tech" />
+    <Breadcrumbs />
+    <main id="main-content">
+        <section id="tech" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify">
+            <h1 className="text-2xl sm:text-3xl tracking-wider">Tech</h1>
+            <h2>This Website</h2>
+            <ul>
+                <li> <a class="tech" href="https://astro.build/" target="_blank">Astro</a>: An agnostic minimal framework that can work as SSG and provide SSR</li>
+            </ul>
+            <h2>Dev Environment</h2>
+            <ul>
+                <li> <a class="tech" href="https://archlinux.org/" target="_blank">Arch Linux</a>: A simple, lightweight distro that I use mainly for the AUR.</li>
+                <li> <a class="tech" href="https://github.com/baskerville/bspwm" target="_blank">bspwm</a>: A tiling window on the bsp policy.</li>
+                <li> <a class="tech" href="https://st.suckless.org/" target="_blank">st</a>: A simple suckless terminal that does everything I need it to.</li>
+                <li> <a class="tech" href="https://www.zsh.org/" target="_blank">zsh</a>: A shell with some more features than bash that makes it better.</li>
+                <li> <a class="tech" href="https://neovim.io/" target="_blank">nvim</a>: The best and most extensible text editor.</li>
+            </ul>
+            <div id="skills"></div>
+    </main>
+    <Footer />
+</Layout>
+
+<script>
+import skills from "@contents/skills.js";
+let skillsString = "";
+    skills.map((skill) => {
+        skillsString +=
+            `<h2>` +
+            skill.title +
+            `</h2>`;
+        skill.rows.map((row) => {
+        skillsString += `<div class="grid gap-10 grid-flow-col justify-items-center">`;
+            row.map((cols) => {
+                skillsString +=
+            `<div class="justify-self-auto"> <i class="w-full icons devicon-` +
+                    cols.field +
+                    `"></i><p>` +
+                    cols.title +
+                    `</p></div>`;
+            });
+            skillsString += `</div>`;
+        });
+    });
+document.getElementById("skills").innerHTML = skillsString;
+</script>
+

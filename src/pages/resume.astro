@@ -1,0 +1,33 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Hr from "@components/Hr.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+---
+
+<Layout>
+  <Header activeNav="resume" />
+  <Breadcrumbs />
+  <main id="main-content">
+    <section id="hero" style="height:90vh">
+        <embed
+            src="https://xinslu.github.io/Resume.pdf"
+            type="application/pdf"
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+    ></embed>
+    </section>
+  </main>
+  <Footer />
+
+</Layout>
+
+<style>
+  /* ===== Hero Section ===== */
+  #hero {
+      @apply pt-8 pb-8 text-justify; 
+  }
+</style>

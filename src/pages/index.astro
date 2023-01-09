@@ -24,42 +24,43 @@ const featuredPosts = sortedPosts.filter(
     <section id="hero">
       <h1>Hi, I'm Kinshuk Phalke</h1>
       <p>
-        I am sophmore at the Georgia Institute of technology, Atlanta where I
+        I am sophomore at the Georgia Institute of technology, Atlanta where I
         major in Computer Science. I specialize in Systems and Architecture and
-        Artificial Intelligence. I am interested in FinTech, Machine Learning
+        Artificial Intelligence. I am interested in Financial Technologies, Machine Learning
         Research, Programming Languages, Operating Systems and Processor
         Architecture.
       </p>
       <br />
       <p>
-        Currently, I am researching at the High Performance Architechture Labs
-        at Georgia Tech with Xueyang Yang about In-Storage Compute Scheduling.
+        Currently, I am researching at the High Performance Architecture Labs
+        at Georgia Tech with Xueyang Yang about In-Storage GPU Scheduling.
         I'm also working on personal projects related to making my own DIY
         <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
           href="https://github.com/xinslu/brush"
-        >
-          shell</LinkButton
-        > in C using syscalls and writing a fractal based 3-D platformer using SFML
+                    class="highlight"
+                ><span class="highlight">
+                        shell</span></LinkButton
+        > in C using system calls and writing a fractal based 3-D platformer using SFML
         in C++. I love talking about Linux, NeoVim and Rust.
       </p>
       <br />
       <p>
-        I love watching thriller and/or mystery movies/tv shows, currently my
+        I love watching thriller and/or mystery movies/TV shows, currently my
         favourites stand at
         <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
           href="https://en.wikipedia.org/wiki/Dark_(TV_series)"
-        >
+                ><span class="highlight">
           Dark
-        </LinkButton>
+        </span></LinkButton>
         and
         <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
           href="https://en.wikipedia.org/wiki/Better_Call_Saul"
-        >
+                ><span class="highlight">
           Better Call Saul
-        </LinkButton>
+                    </span></LinkButton>
         . I also love listening to Avicii, Mac Miller and The Weekend.
       </p>
       <br />
@@ -113,5 +114,9 @@ const featuredPosts = sortedPosts.filter(
   }
   .all-posts-btn-wrapper {
     @apply text-center my-8;
+  }
+
+  .highlight {
+    color: rgba(var(--color-accent),var(--tw-text-opacity));
   }
 </style>

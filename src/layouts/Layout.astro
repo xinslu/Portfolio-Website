@@ -40,19 +40,6 @@ const socialImageURL = new URL(
     <meta name="description" content={description} />
     <meta name="author" content={author} />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalURL} />
-    <meta property="og:image" content={socialImageURL} />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={socialImageURL} />
-
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,18 +49,6 @@ const socialImageURL = new URL(
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-
-    {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
-      googleSiteVerification && (
-        <meta
-          name="google-site-verification"
-          content={googleSiteVerification}
-        />
-      )
-    }
 
     <script is:inline src="/toggle-theme.js"></script>
   </head>

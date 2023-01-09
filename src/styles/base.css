@@ -114,6 +114,11 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-skin-card-muted;
   }
+  .highlight {
+    color: rgba(var(--color-accent),var(--tw-text-opacity));
+    font-weight: bold;
+  }
+
 }
 
 @layer components {
