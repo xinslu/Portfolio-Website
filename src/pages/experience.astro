@@ -1,5 +1,5 @@
 ---
-import experiences from "@contents/experiences"
+import experiences from "@assets/experiences"
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
@@ -38,7 +38,7 @@ import Layout from "@layouts/Layout.astro";
 </Layout>
 
 <script>
-import experiences from "../contents/experiences"
+import experiences from "../assets/experiences"
 experiences.map((experience) => {
     document.getElementById(experience.title).innerHTML = experience.description;
 })

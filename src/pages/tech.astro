@@ -3,7 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
-import skills from "@contents/skills.js";
+import skills from "@assets/skills.js";
 ---
 <style is:global>
     .tech {
@@ -41,7 +41,7 @@ import skills from "@contents/skills.js";
 </Layout>
 
 <script>
-import skills from "@contents/skills.js";
+import skills from "@assets/skills.js";
 let skillsString = "";
     skills.map((skill) => {
         skillsString +=

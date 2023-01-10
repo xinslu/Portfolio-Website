@@ -1,6 +1,5 @@
 ---
-import projects from "@contents/projects"
-import Projects from "@layouts/Projects.astro";
+import projects from "@assets/projects"
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
@@ -30,7 +29,7 @@ import Layout from "@layouts/Layout.astro";
 </Layout>
 
 <script>
-import projects from "../contents/projects"
+import projects from "../assets/projects"
 projects.map((project) => {
     document.getElementById(project.title).innerHTML = project.description;
 })
