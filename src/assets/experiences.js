@@ -39,7 +39,7 @@ let experiences = [
     {
         title: "Notitia",
         job: "Software Developer",
-        duration: "October 2021 - Present",
+        duration: "November 2021 - Present",
         description: `I am working in a start up at Georgia Tech in building a
         MVP. I worked on developing a <span class="highlight">Full-Stack Website</span>
         and working on fine tuning an NLP model for more accurate results. I worked on
