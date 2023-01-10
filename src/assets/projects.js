@@ -1,12 +1,24 @@
 const projects = [
     {
+        title: "Mandlebrot Madness (WIP)",
+        link: "https://github.com/saisree27/mandlebrot-madness",
+        tech: "C++, SFML",
+        description: `Mandlebrot Madness is a <span class="highlight">3D Fractal Based Platformer</span> that is written in C++ using the SFML library.`,
+    },
+    {
+        title: "Brush (WIP)",
+        link: "https://github.com/xinslu/brush",
+        tech: "C",
+        description: `Brush is a <span class="highlight">minimally POSIX compliant shell</span> that is written in C. Written to implement how much ever of the POSIX compliancy I can.`,
+    },
+    {
         title: "Speech2Code",
         link: "https://github.com/saisree27/speechtocode",
         tech: "Python, ReactJS, Express.js",
         description: `Speech2Code is a <span class="highlight"> turing-complete website</span> that helps translate a spoken english like <span class="highlight"> meta language </span> to Java, JavaScript and Python, using a <span class="highlight"> language agnostic class-based abstraction system </span> that enables easy addtion of language support. The speech transcription is done using the <span class="highlight"> AssemblyAI API </span>. I worked on making the Programming Language Middle-End and worked on making CSS changes on the front-end website.`,
     },
     {
-        title: "DetectCNN",
+        title: "DetectCNN (WIP)",
         link: "https://github.com/xinslu/DetectCNN",
         tech: "OCaml, Owl, Eigen",
         description: `DetectCNN is my implementation of the <span class="highlight">Mask Region Based Convolutional Neural Network</span> Paper, written in OCaml using Owl and Eigen. Worked on sorting <span class="highlight">LLVM</span> issues in Owl on <span class="highlight">Darwin M1</span> by contributing to the Github issue. Read and summarized findings of the <span class="highlight">  R-CNN, Fast R-CNN, Faster R-CNN Papers </span>. Studied <span class="highlight"> Instance and Semantic Segmentation approaches, Region Proposal Techniques </span> and <span class="highlight"> Feature Extraction Methods. </span>`,
