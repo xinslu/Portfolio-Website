@@ -48,11 +48,11 @@ let skillsString = "";
             `<h2>` +
             skill.title +
         `</h2><br>`;
-        skillsString += `<div class="grid grid-cols-6 gap-10 auto-cols-max place-content-stretch">`;
+        skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max ">`;
         skill.rows.map((row) => {
-            skillsString += `<div class="justify-items-center"> <i class="icons devicon-` +
+            skillsString += `<div class="w-max justify-items-center"> <i class="icons devicon-` +
                     row.field +
-                    `"></i><p>` +
+                    `"></i><p class="w-max">` +
                     row.title +
                     `</p></div>`;
         });

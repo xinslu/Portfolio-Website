@@ -5,7 +5,7 @@ import LinkButton from "./LinkButton.astro";
 
 
 export interface Props {
-  activeNav?: "experience" | "projects" | "skills" | "blogs";
+  activeNav?: "experience" | "projects" | "tech" | "blog" | "resume";
 }
 
 const { activeNav } = Astro.props;
@@ -122,13 +122,6 @@ const { activeNav } = Astro.props;
   }
   nav ul li a {
     @apply px-4 py-3 w-full text-center sm:px-2 sm:py-1 sm:my-0 font-medium hover:text-skin-accent;
-  }
-  nav ul li:nth-child(4) a {
-    @apply w-auto;
-  }
-  nav ul li:nth-child(4),
-  nav ul li:nth-child(5) {
-    @apply col-span-1;
   }
   nav a.active {
     @apply underline underline-offset-4 decoration-wavy decoration-2;
