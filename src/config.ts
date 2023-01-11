@@ -1,11 +1,11 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://astro-paper.pages.dev/",
+  website: "https://kinshukphalke.com/",
   author: "Kinshuk Phalke",
   desc: "Personal Website of Kinshuk Phalke, a Student at Georgia Institute of Technology",
   title: "Kinshuk Phalke",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "favicon.ico",
   lightAndDarkMode: true,
   postPerPage: 3,
 };

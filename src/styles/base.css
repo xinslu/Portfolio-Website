@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: JetBrains Mono 
+    }
   :root,
   html[data-theme="light"] {
     --color-fill: 251, 254, 251;
@@ -29,7 +32,7 @@
     display: block;
   }
   body {
-    @apply font-mono bg-skin-fill text-skin-base min-h-screen flex flex-col 
+    @apply bg-skin-fill text-skin-base min-h-screen flex flex-col 
     selection:bg-skin-accent selection:text-skin-inverted selection:bg-opacity-70;
   }
   section,

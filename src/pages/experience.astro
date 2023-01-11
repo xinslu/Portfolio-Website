@@ -1,9 +1,14 @@
 ---
-import experiences from "@assets/experiences"
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
+import type { MarkdownInstance } from "astro";
+import type { Frontmatter } from "src/types";
+
+const experiences = await Astro.glob<MarkdownInstance>("../assets/experiences.md");
+const { frontmatter, Content } = experiences[0];
+
 ---
 <style is:global>
     .highlight {
@@ -12,7 +17,6 @@ import Layout from "@layouts/Layout.astro";
     }
 </style>
 
-
 <Layout title="Experiences | Kinshuk Phalke">
     <Header activeNav="experience" />
     <Breadcrumbs />
@@ -20,31 +24,9 @@ import Layout from "@layouts/Layout.astro";
         <section id="about" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify">
             <h1 className="text-2xl sm:text-3xl tracking-wider">Experience</h1>
                 <div className="col-md-9 pe-5 text-justify">
-                    {experiences.map((experience) => {
-                        return (
-                            <h2 classClass="text-sky-400"> 
-                                {experience.title}
-                            </h2>
-                                <p class="text-lg text-gray-10"><i>{experience.job} ({experience.duration})</i></p>
-                                    <p id={experience.title}></p>
-                        );
-                    })}
+                <Content />
             </div>
         </section>
     </main>
-    </div>
     <Footer />
-
 </Layout>
-
-<script>
-import experiences from "../assets/experiences"
-experiences.map((experience) => {
-    document.getElementById(experience.title).innerHTML = experience.description;
-})
-console.log(experiences)
-</script>
-
-
-
-

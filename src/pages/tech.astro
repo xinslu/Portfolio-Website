@@ -48,9 +48,9 @@ let skillsString = "";
             `<h2>` +
             skill.title +
         `</h2><br>`;
-        skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max ">`;
+        skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max justify-center justify-items-center">`;
         skill.rows.map((row) => {
-            skillsString += `<div class="w-max justify-items-center"> <i class="icons devicon-` +
+            skillsString += `<div class="w-max justify-center"> <i class="justify-self-center icons devicon-` +
                     row.field +
                     `"></i><p class="w-max">` +
                     row.title +
