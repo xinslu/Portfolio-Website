@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: JetBrains Mono 
+    font-family: Liberation Mono 
     }
   :root,
   html[data-theme="light"] {
@@ -95,8 +95,7 @@
 
   /* ===== scrollbar ===== */
   html {
-    overflow-y: scroll;
-  }
+    overflow-y: scroll; }
 
   /* width */
   ::-webkit-scrollbar {
