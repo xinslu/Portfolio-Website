@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: Liberation Mono 
+    font-family: "Fira Mono", monospace;
     }
   :root,
   html[data-theme="light"] {
@@ -95,7 +95,8 @@
 
   /* ===== scrollbar ===== */
   html {
-    overflow-y: scroll; }
+    overflow-y: scroll; 
+}
 
   /* width */
   ::-webkit-scrollbar {
