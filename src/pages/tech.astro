@@ -51,9 +51,9 @@ let skillsString = "";
         skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max justify-center justify-items-center">`;
         skill.rows.map((row) => {
             skillsString += `<div class="w-max justify-center"> <i class="justify-self-center icons devicon-` +
-                    row.field +
+                    row[0] +
                     `"></i><p class="w-max">` +
-                    row.title +
+                    row[1] +
                     `</p></div>`;
         });
         skillsString += `</div>`;
