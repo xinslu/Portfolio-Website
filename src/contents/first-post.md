@@ -15,7 +15,7 @@ write it’s just that I haven’t been able to take out much time to make some 
 the necessary backend and database to achieve this. But I haven’t yet thought
 of a name so guess I would have to call it just “Blog” for now. And I hate
 introductions, so I promise I’m doing this only once. With that out of the way,
-lets actually begin, shall we? 
+lets actually begin, shall we?
 
 ## "the incident"
 The other day I get a notification on my phone when sleeping and things like
