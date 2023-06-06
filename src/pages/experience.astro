@@ -1,5 +1,4 @@
 ---
-import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
@@ -19,9 +18,8 @@ const { frontmatter, Content } = experiences[0];
 
 <Layout title="Experiences | Kinshuk Phalke">
     <Header activeNav="experience" />
-    <Breadcrumbs />
     <main id="main-content">
-        <section id="about" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify">
+        <section id="about" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify pt-2 mt-10">
             <h1 className="text-2xl sm:text-3xl tracking-wider">Experience</h1>
                 <div className="col-md-9 pe-5 text-justify">
                 <Content />
