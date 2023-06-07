@@ -1,9 +1,4 @@
 ---
-import { LOGO_IMAGE, SITE } from "src/config";
-import Hr from "./Hr.astro";
-import LinkButton from "./LinkButton.astro";
-
-
 export interface Props {
   activeNav?: "experience" | "projects" | "tech" | "blog" | "resume";
 }
@@ -79,7 +74,9 @@ const { activeNav } = Astro.props;
       </nav>
     </div>
   </div>
-  <Hr />
+  <div class="max-w-3xl mx-auto px-4"}>
+    <hr class="border-white-line" />
+  </div>
 </header>
 
 <style>

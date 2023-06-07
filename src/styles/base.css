@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: "Fira Mono", monospace;
+    font-family: monospace, monospace;
     }
   :root,
   html[data-theme="light"] {
@@ -40,7 +40,7 @@
     @apply max-w-3xl mx-auto px-4;
   }
   a {
-    @apply outline-offset-1 outline-skin-fill outline-2 
+    @apply outline-offset-1 outline-skin-fill outline-2
     focus-visible:outline-dashed focus-visible:no-underline;
   }
   svg {
@@ -52,16 +52,12 @@
     group-hover:fill-transparent;
   }
   .prose {
-    @apply prose-a:underline-offset-8 prose-ul:overflow-x-clip 
-    prose-a:!decoration-dashed hover:prose-a:text-skin-accent 
-    prose-img:mx-auto prose-img:border-2 prose-img:border-skin-line
-    prose-img:!mt-2 prose-headings:!mb-3
+    @apply prose-ul:overflow-x-clip
+    prose-a:!decoration-dashed hover:prose-a:text-skin-accent underline-offset-8
     prose-th:border prose-th:border-skin-line
     prose-td:border prose-td:border-skin-line
     prose-h3:italic
-
-    
-    prose-p:!text-skin-base prose-headings:!text-skin-base 
+    prose-p:!text-skin-base prose-headings:!text-skin-base
     prose-ol:!text-skin-base prose-ul:!text-skin-base prose-blockquote:opacity-80 
     prose-figcaption:!text-skin-base prose-figcaption:opacity-70
     prose-code:bg-skin-card prose-code:bg-opacity-75 
@@ -80,22 +76,16 @@
   tfoot td:first-child {
     padding-left: 0.5714286em;
   }
-  .prose h2#table-of-contents {
-    @apply mb-2;
-  }
   .prose details {
     @apply text-skin-base cursor-pointer inline-block select-none;
   }
   .prose summary {
     @apply focus-outline;
   }
-  .prose h2#table-of-contents + p {
-    @apply hidden;
-  }
 
   /* ===== scrollbar ===== */
   html {
-    overflow-y: scroll; 
+
 }
 
   /* width */
