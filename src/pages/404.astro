@@ -1,24 +1,22 @@
 ---
-import { SITE } from "src/config";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import LinkButton from "@components/LinkButton.astro";
 ---
 
-<Layout title={`404 Not Found | ${SITE.title}`}>
+<Layout title={`404 Not Found | Kinshuk Phalke`}>
   <Header />
 
   <main id="main-content">
     <div class="not-found-wrapper">
       <h1 aria-label="404 Not Found">404</h1>
       <p>Page Not Found</p>
-      <LinkButton
+      <a
         href="/"
-        className="my-6 underline decoration-dashed underline-offset-8 text-lg"
+        class="hover:text-skin-base my-6 underline decoration-dashed underline-offset-8 text-lg"
       >
         Go back home
-      </LinkButton>
+      </a>
     </div>
   </main>
 
