@@ -68,6 +68,18 @@
     prose-hr:!border-skin-line prose-li:marker:!text-skin-accent 
     prose-blockquote:!border-l-skin-accent prose-blockquote:border-opacity-50;
   }
+
+  em {
+    color: white;
+    opacity: 0.8;
+	font-size: 1.125rem;
+  }
+
+  .prose strong {
+    color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
+    font-weight: bold;
+  }
+
   .prose a {
     @apply hover:!text-skin-accent;
   }
@@ -107,6 +119,7 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-skin-card-muted;
   }
+
   .highlight {
     color: rgba(var(--color-accent),var(--tw-text-opacity));
     font-weight: bold;
