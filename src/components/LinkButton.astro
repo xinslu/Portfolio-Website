@@ -9,7 +9,6 @@ export interface Props {
 
 const { href, className, ariaLabel, title, disabled = false } = Astro.props;
 ---
-
 <a
   type="button"
   href={disabled ? "#" : href}
