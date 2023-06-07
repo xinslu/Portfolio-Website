@@ -1,4 +1,4 @@
-## [Mandlebrot Madness (WIP)](https://github.com/saisree27/mandlebrot-madness")
+## [Mandelbrot Madness (WIP)](https://github.com/saisree27/mandelbrot-madness)
 *<span class="text-lg text-gray-10">C++, SFML</span>*
 
 Mandlebrot Madness is a <span class="highlight">3D Fractal Based Platformer</span> that is written in C++ using the SFML library.
@@ -33,7 +33,7 @@ and Semantic Segmentation approaches, Region Proposal Techniques </span> and
 
 ## [Enhance](https://github.com/xinslu/Enhance)
 *<span class="text-lg text-gray-10">Python, Tensorflow, Keras</span>*
-        
+
 Enhance is my implementation of the <span class="highlight">Super Resolution
 Generative Adverserial Network</span> Paper using tensorflow, which uses a
 ResNet with a <span class="highlight">Perceptual Loss function</span> based on
@@ -46,7 +46,7 @@ dataset with downscale factor 4 </span>
 
 ## [DeusCL](https://github.com/xinslu/deusCL)
 *<span class="text-lg text-gray-10">Rust, Yew Framework</span>*
-        
+
 DeusCL is a memory-safe <span class="highlight">Common LISP</span>
 implementation with a REPL built in <span class="highlight">Rust</span> . Built
 a handwritten <span class="highlight">recursive descent parser </span> and a
@@ -60,7 +60,7 @@ Framework </span>in Rust to enable users to use a web based simulation of REPL.
 
 ## [PaperPlanes](https://github.com/AllisanLu/PaperPlanes)
 *<span class="text-lg text-gray-10">Unity, C#</span>*
-        
+
 Working on Paper Planes, a <span class="highlight">2D sidescroller
 platformer</span> created with <span class="highlight">Unity</span> as a part
 of the VGDev Club on campus. I worked on a <span class="highlight">relaunch
@@ -71,7 +71,7 @@ class="highlight">collisions with objects</span>. I also worked on making a
 
 ## [hack-a-lang](https://github.com/xinslu/hack-a-lang)
 *<span class="text-lg text-gray-10">Python</span>*
-        
+
 As a part of a dependently-typed (Programming Language Club) on campus, I
 worked on a <span class="highlight">python implementation</span> of the common
 teaching language Lox. I worked on building and degubbing a <span
@@ -87,7 +87,7 @@ for interpreters.
 
 ## [Publixmon](https://github.com/saisree27/publixmon)
 *<span class="text-lg text-gray-10">ReactJS, Express.js, Flask, Firebase, Solidity, Ganache, IPFS, Web3.js, NCR API</span>*
-        
+
 Publixmon is a <span class="highlight">full-stack mobile app</span> integrating
 modern day NFT and Style Tranfer technologies to create a unique interactive
 retail experience. With every checkout, the app has a chance to give the user a
@@ -124,7 +124,7 @@ can then set their username, add a profile picture and set the theme
 
 ## [Twitake](https://twitake.netlify.app/)
 *<span class="text-lg text-gray-10">ReactJS, Express.js, MongoDB, Firebase, Twitter API, Gensim, NLTK, Node.js</span>*
-        
+
 A <span class="highlight">full-stack fake disaster tweet analysis tool</span>
 that uses <span class="highlight">TwitterAPI</span> to extract the text from
 the tweet link that the user pastes in input box and data processing tools like
