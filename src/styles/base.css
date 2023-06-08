@@ -5,7 +5,7 @@
 @layer base {
   html {
     font-family: monospace, monospace;
-    }
+  }
   :root,
   html[data-theme="light"] {
     --color-fill: 251, 254, 251;
@@ -23,6 +23,7 @@
     --color-card-muted: 89, 107, 129;
     --color-border: 59, 70, 85;
   }
+
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
     display: none;
@@ -31,6 +32,7 @@
   html[data-theme="dark"] #sun-svg {
     display: block;
   }
+
   body {
     @apply bg-skin-fill text-skin-base min-h-screen flex flex-col 
     selection:bg-skin-accent selection:text-skin-inverted selection:bg-opacity-70;
@@ -67,7 +69,7 @@
   }
 
   em {
-    color: white;
+    color: rgb(var(--color-text-base));
     opacity: 0.8;
 	font-size: 1.125rem;
   }
@@ -79,7 +81,7 @@
 
   .prose a {
     color: rgb(var(--color-accent)) !important;
-    text-decoration-color: #fff;
+    text-decoration-color: rgb(var(--color-text-base));
   }
 
   .prose a:hover {
@@ -97,11 +99,6 @@
   .prose summary {
     @apply focus-outline;
   }
-
-  /* ===== scrollbar ===== */
-  html {
-
-}
 
   /* width */
   ::-webkit-scrollbar {

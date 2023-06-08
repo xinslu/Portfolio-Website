@@ -3,11 +3,27 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import skills from "@assets/skills.js";
+let skillsString = "";
+    skills.map((skill) => {
+        skillsString +=
+            `<h2>` +
+            skill.title +
+        `</h2><br>`;
+        skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max justify-center justify-items-center">`;
+        skill.rows.map((row) => {
+            skillsString += `<div class="w-max justify-center"> <i class="justify-self-center icons devicon-` +
+                    row[0] +
+                    `"></i><p class="w-max">` +
+                    row[1] +
+                    `</p></div>`;
+        });
+        skillsString += `</div>`;
+    });
 ---
 <style is:global>
     .icons {
        font-size: 40px !important;
-       color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
+       color: rgb(var(--color-accent)) !important;
     }
 </style>
 <Layout title="Tech | Kinshuk Phalke">
@@ -28,29 +44,8 @@ import skills from "@assets/skills.js";
                 <li> <a class="tech" href="https://www.zsh.org/" target="_blank">zsh</a>: A shell with some more features than bash that makes it better.</li>
                 <li> <a class="tech" href="https://neovim.io/" target="_blank">nvim</a>: The best and most extensible text editor.</li>
             </ul>
-            <div id="skills"></div>
+            <div id="skills" set:html={skillsString}>
+            </div>
     </main>
     <Footer />
 </Layout>
-
-<script>
-import skills from "@assets/skills.js";
-let skillsString = "";
-    skills.map((skill) => {
-        skillsString +=
-            `<h2>` +
-            skill.title +
-        `</h2><br>`;
-        skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max justify-center justify-items-center">`;
-        skill.rows.map((row) => {
-            skillsString += `<div class="w-max justify-center"> <i class="justify-self-center icons devicon-` +
-                    row[0] +
-                    `"></i><p class="w-max">` +
-                    row[1] +
-                    `</p></div>`;
-        });
-        skillsString += `</div>`;
-    });
-document.getElementById("skills").innerHTML = skillsString;
-</script>
-
