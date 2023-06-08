@@ -5,11 +5,6 @@ import Footer from "@components/Footer.astro";
 import skills from "@assets/skills.js";
 ---
 <style is:global>
-    .tech {
-       color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
-       font-weight: bold;
-    }
-
     .icons {
        font-size: 40px !important;
        color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
@@ -19,7 +14,7 @@ import skills from "@assets/skills.js";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <Header activeNav="tech" />
     <main id="main-content">
-        <section id="tech" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify pt-2 mt-10">
+        <section id="tech" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify pt-2 mt-10 prose-a:font-bold">
             <h1 className="text-2xl sm:text-3xl tracking-wider">Tech</h1>
             <h2>This Website</h2>
             <ul>

@@ -39,10 +39,7 @@
   footer {
     @apply max-w-3xl mx-auto px-4;
   }
-  a {
-    @apply outline-offset-1 outline-skin-fill outline-2
-    focus-visible:outline-dashed focus-visible:no-underline;
-  }
+
   svg {
     @apply w-6 h-6 inline-block fill-skin-base group-hover:fill-skin-accent;
   }
@@ -76,13 +73,19 @@
   }
 
   .prose strong {
-    color: rgba(var(--color-accent),var(--tw-text-opacity)) !important;
+    color: rgb(var(--color-accent)) !important;
     font-weight: bold;
   }
 
   .prose a {
-    @apply hover:!text-skin-accent;
+    color: rgb(var(--color-accent)) !important;
+    text-decoration-color: #fff;
   }
+
+  .prose a:hover {
+    text-decoration-color: rgb(var(--color-accent)) !important;
+  }
+
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
@@ -119,12 +122,6 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-skin-card-muted;
   }
-
-  .highlight {
-    color: rgba(var(--color-accent),var(--tw-text-opacity));
-    font-weight: bold;
-  }
-
 }
 
 @layer components {

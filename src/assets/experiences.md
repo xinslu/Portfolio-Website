@@ -4,7 +4,15 @@
 I am working as a Software Engineering Intern leading a team of 5 other interns
 on the **Retail Innovation - Edge Team**.
 
-I am working on a Mock Organization Micro-Service, written in Flask in Python. This API enables the use and production of 
+I am working on a **Mock Organization Micro-Service**, written in **Flask** in
+Python. This API enables the generation of sample retail organizations,
+populated with a categorized catalog and locations around the country. I worked
+with processing the catalog database, which was generated from an open source
+database. I trained and used a **Brand Recognition NER Models** to accurately
+predict the brand names in a product and remove them from the product name. I also
+worked with randomizing the generation of the product catalog and locations
+using open location datasets. I wrote a **CI/CD pipeline** to help with testing and
+to add functionality to publish micros-service when required.
 
 ## High Performance Architecture Lab
 *Undergraduate Research Assistant (Jan 2023 - Present)*
@@ -37,7 +45,11 @@ as the calculation and handling of returns. The app is meant to work with
 exsisting **retail e-commerce apps** and **Point of Sale systems**. This was
 made to the replace the existing .NET API as this was rather bulky and slow, we
 managed to cut down the size of the binary from 100MB to just **5MB** at
-comparable performance.
+comparable performance. I worked on writing the core functionality for the
+integrations into the **tax**, **item** and **promotions** layer and also the
+core integrations for the **e-commerce websites** and **Point-Of-Sale**
+Platform. I also wrote a **CI/CD pipeline** that would help with testing and
+also help in publishing the microservice to GCP.
 
 Along with the api, we worked on a sample e-commerce website written in
 **Next.js**on incorporating API into the frontend. To help with development, I

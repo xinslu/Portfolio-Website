@@ -1,15 +1,26 @@
+## [Tectonic (WIP)](https://github.com/xinslu/tectonic)
+*Rust*
+
+Contributed to an open source project called tectonic, which is a modernized,
+complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. I
+added the ability for users to specify a **target output pdf** to build, amongsts a
+series of outputs.
+
 ## [Mandelbrot Madness (WIP)](https://github.com/saisree27/mandelbrot-madness)
 *C++, SFML*
 
 Mandlebrot Madness is a **3D Fractal Based Platformer** that is written in C++
-using the SFML library.
+using the SFML library. Writing a **3D camera** with mouse and keyboard controls
+for the user.
 
 ## [Brush (WIP)](https://github.com/xinslu/brush)
 *C*
 
 Brush is a **minimally POSIX compliant shell** that is written in C. Written to
-implement how much ever of the POSIX compliancy I can. Added basic shell and
-error reporting.
+implement how much ever of the POSIX compliancy I can. Added **basic shell**
+that can process any command in the PATH with proper **error reporting**.
+Working on implementing a **POSIX interpreter** enabling the building of
+command-line scripts.
 
 ## [Speech2Code](https://github.com/saisree27/speechtocode)
 *Python, ReactJS, Express.js*
