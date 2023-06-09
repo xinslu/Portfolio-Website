@@ -3,8 +3,20 @@
 
 Contributed to an open source project called tectonic, which is a modernized,
 complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. I
-added the ability for users to specify a **target output pdf** to build, amongsts a
+added the ability for users to specify a **target output pdf** to build, amongst a
 series of outputs.
+
+## [BuzzOS Rust Standard Library](https://github.com/xinslu/rust-std-buzzos)
+*Rust*
+
+Worked on making a minimal implementation of the **Rust Standard Library** for
+BuzzOS, which is an OS developed by the TAs of the Operating Systems class at
+GT. This special version of the Standard Library was implemnented **without a
+libc**, and using wrapper based interface around **raw syscalls**. I included a
+**String**, **Vector**, **Box** and **Cell** Implementation along with the
+**multiple traits** implemented for each of these types. Implemented a **user
+space**, and allowed the kernel to gracefully handoff to the userspace after
+setup.
 
 ## [Mandelbrot Madness (WIP)](https://github.com/saisree27/mandelbrot-madness)
 *C++, SFML*
