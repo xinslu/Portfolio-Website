@@ -1,7 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
 import skills from "@assets/skills.js";
 let skillsString = "";
     skills.map((skill) => {
@@ -21,8 +20,8 @@ let skillsString = "";
     });
 ---
 <Layout title="Tech | Kinshuk Phalke">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <Header activeNav="tech" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <section id="content" class="prose">
         <h1 className="text-2xl">Tech</h1>
         <h2>This Website</h2>
@@ -40,5 +39,4 @@ let skillsString = "";
         <div id="skills" set:html={skillsString}>
         </div>
     </section>
-    <Footer />
 </Layout>

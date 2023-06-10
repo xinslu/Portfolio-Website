@@ -8,7 +8,6 @@ const { activeNav } = Astro.props;
 
 <header>
   <div class="nav-container">
-    <div class="top-nav-wrap">
       <a href="/" class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" class="scale-125 sm:scale-100">
           <path
@@ -18,7 +17,7 @@ const { activeNav } = Astro.props;
       </a>
       <nav id="nav-menu">
         <button
-          class="hamburger-menu focus-outline"
+          class="hamburger-menu"
           aria-label="Open Menu"
           aria-expanded="false"
           aria-controls="menu-items"
@@ -29,7 +28,7 @@ const { activeNav } = Astro.props;
             <div id="third-line"></div>
           </div>
         </button>
-        <ul id="menu-items" class="display-none sm:flex">
+        <ul id="menu-items">
           <li>
             <a
               href="/experience"
@@ -72,9 +71,8 @@ const { activeNav } = Astro.props;
         </ul>
       </nav>
     </div>
-  </div>
   <div class="sep">
-    <hr class="border-white-line" />
+    <hr />
   </div>
 </header>
 
@@ -91,10 +89,10 @@ const { activeNav } = Astro.props;
     const menuExpanded = menuBtn?.getAttribute("aria-expanded");
     if (menuExpanded === "false") {
       menuBtn?.setAttribute("aria-expanded", "true");
-      menuItems?.remove("display-none");
+      menuItems?.add("show");
     } else {
       menuBtn?.setAttribute("aria-expanded", "false");
-      menuItems?.add("display-none");
+      menuItems?.remove("show");
     }
   });
 </script>
