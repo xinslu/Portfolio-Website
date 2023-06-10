@@ -20,32 +20,25 @@ let skillsString = "";
         skillsString += `</div>`;
     });
 ---
-<style is:global>
-    .icons {
-       font-size: 40px !important;
-       color: rgb(var(--color-accent)) !important;
-    }
-</style>
 <Layout title="Tech | Kinshuk Phalke">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <Header activeNav="tech" />
-    <main id="main-content">
-        <section id="tech" class="mb-28 prose max-w-3xl prose-img:border-0 text-justify pt-2 mt-10 prose-a:font-bold">
-            <h1 className="text-2xl sm:text-3xl tracking-wider">Tech</h1>
-            <h2>This Website</h2>
-            <ul>
-                <li> <a class="tech" href="https://astro.build/" target="_blank">Astro</a>: An agnostic minimal framework that can work as SSG and provide SSR</li>
-            </ul>
-            <h2>Dev Environment</h2>
-            <ul>
-                <li> <a class="tech" href="https://archlinux.org/" target="_blank">Arch Linux</a>: A simple, lightweight distro that I use mainly for the AUR.</li>
-                <li> <a class="tech" href="https://github.com/baskerville/bspwm" target="_blank">bspwm</a>: A tiling window on the bsp policy.</li>
-                <li> <a class="tech" href="https://alacritty.org/" target="_blank">Alacritty</a>: Terminal that's not the best but does everything I need it to.</li>
-                <li> <a class="tech" href="https://www.zsh.org/" target="_blank">zsh</a>: A shell with some more features than bash that makes it better.</li>
-                <li> <a class="tech" href="https://neovim.io/" target="_blank">nvim</a>: The best and most extensible text editor.</li>
-            </ul>
-            <div id="skills" set:html={skillsString}>
-            </div>
-    </main>
+    <section id="content" class="prose">
+        <h1 className="text-2xl">Tech</h1>
+        <h2>This Website</h2>
+        <ul>
+            <li> <a class="tech" href="https://astro.build/" target="_blank">Astro</a>: An agnostic minimal framework that can work as SSG and provide SSR</li>
+        </ul>
+        <h2>Dev Environment</h2>
+        <ul>
+            <li> <a class="tech" href="https://archlinux.org/" target="_blank">Arch Linux</a>: A simple, lightweight distro that I use mainly for the AUR.</li>
+            <li> <a class="tech" href="https://github.com/baskerville/bspwm" target="_blank">bspwm</a>: A tiling window on the bsp policy.</li>
+            <li> <a class="tech" href="https://alacritty.org/" target="_blank">Alacritty</a>: Terminal that's not the best but does everything I need it to.</li>
+            <li> <a class="tech" href="https://www.zsh.org/" target="_blank">zsh</a>: A shell with some more features than bash that makes it better.</li>
+            <li> <a class="tech" href="https://neovim.io/" target="_blank">nvim</a>: The best and most extensible text editor.</li>
+        </ul>
+        <div id="skills" set:html={skillsString}>
+        </div>
+    </section>
     <Footer />
 </Layout>

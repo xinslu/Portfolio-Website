@@ -10,13 +10,9 @@ const { frontmatter, Content } = projects[0];
 ---
 <Layout title="Projects | Kinshuk Phalke">
     <Header activeNav="projects" />
-    <main id="main-content">
-        <section id="projects" class="mb-20 prose max-w-3xl text-justify mt-10 prose-h2:my-2">
-            <h1 className="text-2xl">Projects</h1>
-                <div className="col-md-9 pe-5 text-justify">
-                    <Content />
-            </div>
-        </section>
-    </main>
+    <section id="content" class="prose">
+        <h1 className="text-2xl">Projects</h1>
+        <Content />
+    </section>
     <Footer />
 </Layout>

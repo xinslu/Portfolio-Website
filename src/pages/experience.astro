@@ -8,22 +8,11 @@ const experiences = await Astro.glob<MarkdownInstance>("../assets/experiences.md
 const { frontmatter, Content } = experiences[0];
 
 ---
-<style is:global>
-    .highlight {
-       color: rgba(var(--color-accent),var(--tw-text-opacity));
-       font-weight: bold;
-    }
-</style>
-
 <Layout title="Experiences | Kinshuk Phalke">
     <Header activeNav="experience" />
-    <main id="main-content">
-        <section id="about" class="mb-28 prose max-w-3xl text-justify pt-2 mt-10 prose-h2:my-0 ">
-            <h1 className="text-2xl sm:text-3xl tracking-wider">Experience</h1>
-                <div className="col-md-9 pe-5 text-justify">
-                <Content />
-            </div>
-        </section>
-    </main>
+    <section id="content" class="prose">
+        <h1 className="text-2xl tracking-wider">Experience</h1>
+        <Content />
+    </section>
     <Footer />
 </Layout>

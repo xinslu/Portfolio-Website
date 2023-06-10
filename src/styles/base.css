@@ -6,17 +6,19 @@
   html {
     font-family: monospace, monospace;
   }
+
   :root,
   html[data-theme="light"] {
-    --color-fill: 251, 254, 251;
+    --color-fill: rgb(251, 254, 251);
     --color-text-base: 40, 39, 40;
     --color-accent: 0, 108, 172;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
   }
+
   html[data-theme="dark"] {
-    --color-fill: 15, 15, 15;
+    --color-fill: rgb(15, 15, 15);
     --color-text-base: 230, 230, 230;
     --color-accent: 26, 217, 217;
     --color-card: 63, 75, 90;
@@ -34,38 +36,35 @@
   }
 
   body {
-    @apply bg-skin-fill text-skin-base min-h-screen flex flex-col 
-    selection:bg-skin-accent selection:text-skin-inverted selection:bg-opacity-70;
-  }
-  section,
-  footer {
-    @apply max-w-3xl mx-auto px-4;
+    background-color: var(--color-fill);
+    color: rgb(var(--color-text-base)) !important;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    margin: 0px !important;
   }
 
-  svg {
-    @apply w-6 h-6 inline-block fill-skin-base group-hover:fill-skin-accent;
+  section, footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 48rem !important;
   }
-  svg.icon-tabler {
-    @apply w-6 h-6 scale-125 sm:scale-110 opacity-90 
-    inline-block fill-transparent stroke-2 stroke-current 
-    group-hover:fill-transparent;
+
+  footer {
+    margin-bottom: 0;
   }
-  .prose {
-    @apply prose-ul:overflow-x-clip
-    prose-a:!decoration-dashed hover:prose-a:text-skin-accent underline-offset-8
-    prose-th:border prose-th:border-skin-line
-    prose-td:border prose-td:border-skin-line
-    prose-h3:italic
-    prose-p:!text-skin-base prose-headings:!text-skin-base
-    prose-ol:!text-skin-base prose-ul:!text-skin-base prose-blockquote:opacity-80 
-    prose-figcaption:!text-skin-base prose-figcaption:opacity-70
-    prose-code:bg-skin-card prose-code:bg-opacity-75 
-    prose-code:!text-skin-base prose-code:p-1 prose-code:rounded
-    prose-code:after:!content-[''] prose-code:before:!content-['']
-    prose-strong:!text-skin-base prose-table:text-skin-base 
-    prose-pre:!text-skin-base prose-a:!text-skin-base 
-    prose-hr:!border-skin-line prose-li:marker:!text-skin-accent 
-    prose-blockquote:!border-l-skin-accent prose-blockquote:border-opacity-50;
+
+  .prose p {
+    color: rgb(var(--color-text-base)) !important;
+  }
+
+  h2 {
+    margin-bottom: 0.5% !important;
   }
 
   em {
@@ -78,6 +77,15 @@
     color: rgb(var(--color-accent)) !important;
     font-weight: bold;
   }
+ 
+  .resume {
+    height: 100rem;
+  }
+
+  .icons {
+    font-size: 40px !important;
+    color: rgb(var(--color-accent)) !important;
+  }
 
   .prose a {
     color: rgb(var(--color-accent)) !important;
@@ -88,11 +96,90 @@
     text-decoration-color: rgb(var(--color-accent)) !important;
   }
 
-  .prose thead th:first-child,
-  tbody td:first-child,
-  tfoot td:first-child {
-    padding-left: 0.5714286em;
+  .nav-container {
+    @apply max-w-3xl mx-auto flex flex-col sm:flex-row justify-between items-center;
   }
+  .top-nav-wrap {
+    @apply relative w-full p-4 sm:py-8 flex justify-between items-start sm:items-center;
+  }
+  .logo {
+    @apply absolute sm:static font-semibold text-xl sm:text-2xl py-1;
+  }
+  .hamburger-menu {
+    @apply self-end p-2 sm:hidden;
+  }
+  .hamburger-menu svg {
+    @apply fill-skin-base w-6 h-6 scale-125;
+  }
+
+  nav {
+    @apply w-full sm:py-0 sm:ml-2 flex flex-col items-center sm:justify-end sm:flex-row sm:space-x-4 bg-skin-fill;
+  }
+  nav ul {
+    @apply mt-4 w-44 grid grid-rows-4 grid-cols-2 gap-y-2 gap-x-2 sm:gap-y-0 sm:mt-0 sm:ml-0 sm:w-auto sm:gap-x-5;
+  }
+  nav ul li {
+    @apply col-span-2 flex justify-center items-center;
+  }
+  nav ul li a {
+    @apply px-4 py-3 w-full text-center sm:px-2 sm:py-1 sm:my-0 font-medium hover:text-skin-accent;
+  }
+  nav a.active {
+    @apply underline underline-offset-4 decoration-wavy decoration-2;
+  }
+  nav a.active svg {
+    @apply fill-skin-accent;
+  }
+
+  nav button {
+    @apply p-1;
+  }
+  nav button svg {
+    @apply w-6 h-6 fill-skin-base hover:fill-skin-accent;
+  }
+  #theme-btn {
+    @apply p-3 sm:p-1;
+  }
+  #theme-btn svg {
+    @apply hover:rotate-12 scale-125 sm:scale-100;
+  }
+
+  .icon-container {
+    @apply w-6 h-5 flex-col justify-between items-end;
+  }
+  .icon-container div {
+    @apply bg-skin-inverted h-0.5 transition-all;
+  }
+
+  #first-line {
+    @apply w-full;
+  }
+  #second-line {
+    @apply w-3/4;
+  }
+  #third-line {
+    @apply w-1/2;
+  }
+
+
+  svg {
+    @apply w-6 h-6 inline-block fill-skin-base group-hover:fill-skin-accent;
+  }
+
+  svg.icon-tabler {
+    @apply w-6 h-6 scale-125 sm:scale-110 opacity-90 
+    inline-block fill-transparent stroke-2 stroke-current 
+    group-hover:fill-transparent;
+  }
+
+  .prose {
+    @apply prose-ul:overflow-x-clip
+    prose-a:!decoration-dashed hover:prose-a:text-skin-accent underline-offset-8
+    prose-h3:italic
+    prose-headings:!text-skin-base
+    prose-ul:!text-skin-base
+  }
+  
   .prose details {
     @apply text-skin-base cursor-pointer inline-block select-none;
   }
