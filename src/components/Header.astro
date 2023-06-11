@@ -97,6 +97,20 @@ const { activeNav } = Astro.props;
 </script>
 
 <style>
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-fill);
+}
+
+button {
+    border-width: 0px;
+    background: transparent;
+}
+
+
 .nav-container {
     max-width: 50rem;
     margin-left: auto;
@@ -125,7 +139,6 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 1rem;
 }
 
 
@@ -134,6 +147,7 @@ nav ul {
     row-gap: 0px;
     column-gap: 1.25rem;
 }
+
 
 nav ul li {
     display: flex;
@@ -187,4 +201,35 @@ nav a.active {
 #third-line {
     width: 50%;
 }
+
+@media (max-width:  640px) {
+    #nav-menu {
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: flex !important;
+    }
+
+
+    nav ul {
+        width: 100% !important;
+        display: none;
+    }
+
+    nav ul li a {
+        margin-top: 1rem;
+    }
+
+
+    .show {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    #theme-btn {
+        margin-top: 1rem;
+    }
+}
+
 </style>

@@ -82,6 +82,7 @@ const currentYear = new Date().getFullYear();
 
 <style>
 .footer-wrapper {
+    justify-self: end;
     padding-top: 2rem;
     margin-bottom: 1rem;
     display: flex;
@@ -97,5 +98,12 @@ const currentYear = new Date().getFullYear();
 .social-icons a {
     text-decoration: none;
     margin-right: 0.5rem;
+}
+
+
+@media (max-width:  640px) {
+    .footer-wrapper {
+        justify-content: center;
+    }
 }
 </style>

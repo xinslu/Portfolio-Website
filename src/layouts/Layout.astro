@@ -42,7 +42,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 html {
     font-family: monospace, monospace;
 }
-
 :root,
 html[data-theme="light"] {
     --color-fill: rgb(251, 254, 251);
@@ -69,31 +68,13 @@ html[data-theme="dark"] #sun-svg {
     display: block;
 }
 
-::-webkit-scrollbar {
-    width: 0.75rem;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-fill);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--color-bar);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-bar-hover);
-}
 
 body {
     background-color: var(--color-fill);
-    color: var(--color-base);
-    display: grid;
-    grid-template-rows: 1fr auto;
-    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
-    grid-template-columns:100%;
-    overflow-x: hidden;
 }
 
 section, footer, header {
@@ -102,25 +83,12 @@ section, footer, header {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
     max-width: 50rem;
 }
 
-footer {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-header {
-    margin-top: 0;
-    grid-row-start: 0;
-    grid-row-end: 1;
-    width: 100%;
-}
-
-p, h1, h2, h3, ul, em {
+p, h1, h2, h3, ul, em, header a, span {
     color: var(--color-base);
 }
 
@@ -133,15 +101,6 @@ em {
 strong {
     color: var(--color-accent);
     font-weight: bold;
-}
-
-button {
-    border-width: 0px;
-    background: transparent;
-}
-
-header a {
-    color: var(--color-base);
 }
 
 h1 {
@@ -161,8 +120,6 @@ h2 {
     font-size: 1.75rem;
 }
 
-
-
 .prose a, .prose a:visited {
     color: var(--color-accent);
     text-decoration-color: var(--color-base);
@@ -175,7 +132,6 @@ h2 {
     text-decoration-color: var(--color-accent);
 }
 
-
 svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -185,47 +141,11 @@ svg {
 
 svg.icon-tabler {
     fill: transparent;
-    width: 1.5rem;
-    height: 1.5rem;
     stroke: var(--color-base);
 }
 
-svg.icon-tabler:hover {
+svg:hover {
     stroke: var(--color-accent);
-}
-
-
-@media (max-width:  640px) {
-    .footer-wrapper {
-        justify-content: center;
-    }
-
-    #nav-menu {
-        flex-direction: column;
-    }
-
-    .hamburger-menu {
-        display: flex !important;
-    }
-
-
-    nav ul {
-        display: none !important;
-    }
-
-    nav ul li a {
-        margin-top: 1rem;
-    }
-
-    .show {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    #theme-btn {
-        margin-top: 1rem;
-    }
-
 }
 
 .sep {
@@ -234,9 +154,7 @@ svg.icon-tabler:hover {
     max-width: 50rem;
 }
 
-
 /* /tech */
-
 .icons {
     display: grid;
     font-size: 40px !important;
@@ -244,7 +162,6 @@ svg.icon-tabler:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-    justify-self: center;
 }
 
 .tech-container {
