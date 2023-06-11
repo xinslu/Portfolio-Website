@@ -1,29 +1,26 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
 import skills from "@assets/skills.js";
 let skillsString = "";
     skills.map((skill) => {
         skillsString +=
-            `<h2>` +
+            `<h2 class="tech-title">` +
             skill.title +
         `</h2><br>`;
-        skillsString += `<div class="flex flex-wrap gap-10 auto-cols-max justify-center justify-items-center">`;
+        skillsString += `<div class="tech-container">`;
         skill.rows.map((row) => {
-            skillsString += `<div class="w-max justify-center"> <i class="justify-self-center icons devicon-` +
+            skillsString += `<div class="row"> <i class="icons devicon-` +
                     row[0] +
-                    `"></i><p class="w-max">` +
+                    `"></i><p>` +
                     row[1] +
                     `</p></div>`;
         });
         skillsString += `</div>`;
     });
 ---
-<Layout title="Tech | Kinshuk Phalke">
-    <Header activeNav="tech" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <section id="content" class="prose">
-        <h1 className="text-2xl">Tech</h1>
+<Layout title="Tech" activeTab="tech">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <h1>Tech</h1>
         <h2>This Website</h2>
         <ul>
             <li> <a class="tech" href="https://astro.build/" target="_blank">Astro</a>: An agnostic minimal framework that can work as SSG and provide SSR</li>
@@ -38,5 +35,4 @@ let skillsString = "";
         </ul>
         <div id="skills" set:html={skillsString}>
         </div>
-    </section>
 </Layout>

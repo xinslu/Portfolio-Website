@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  activeNav?: "experience" | "projects" | "tech" | "resume";
+  activeNav?: "experience" | "projects" | "tech";
 }
 
 const { activeNav } = Astro.props;
@@ -9,7 +9,7 @@ const { activeNav } = Astro.props;
 <header>
   <div class="nav-container">
       <a href="/" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" class="scale-125 sm:scale-100">
+        <svg xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1 1 1 0 0 0-.29-.71zM6 20v-9.59l6-6 6 6V20z"
           ></path>
@@ -22,7 +22,7 @@ const { activeNav } = Astro.props;
           aria-expanded="false"
           aria-controls="menu-items"
         >
-          <div class="icon-container flex">
+          <div class="icon-container">
             <div id="first-line"></div>
             <div id="second-line"></div>
             <div id="third-line"></div>
@@ -48,14 +48,13 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a href="/resume" class={activeNav === "resume" ? "active" : ""}>
+            <a href="https://xinslu.github.io/build/Resume/Resume.pdf">
               Resume
             </a>
           </li>
           <li>
             <button
               id="theme-btn"
-              class="focus-outline"
               title="Toggles light & dark"
               aria-label="auto"
               aria-live="polite"
@@ -96,3 +95,96 @@ const { activeNav } = Astro.props;
     }
   });
 </script>
+
+<style>
+.nav-container {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    position: absolute;
+    padding: 1rem;
+}
+
+.hamburger-menu {
+    align-self: flex-end;
+    padding-right: 1rem;
+    display: none;
+}
+
+nav {
+    max-width: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 1rem;
+}
+
+
+nav ul {
+    display: flex;
+    row-gap: 0px;
+    column-gap: 1.25rem;
+}
+
+nav ul li {
+    display: flex;
+    grid-column: span 2 / span 2;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    width: 100%;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+nav ul li a:hover  {
+    color: var(--color-accent);
+}
+
+nav a.active {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 4px;
+}
+
+#theme-btn {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.icon-container {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.icon-container div {
+    height: 0.1rem;
+    background: var(--color-base);
+}
+
+#first-line {
+    width: 100%;
+}
+
+#second-line {
+    width: 75%;
+}
+#third-line {
+    width: 50%;
+}
+</style>

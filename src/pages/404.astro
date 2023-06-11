@@ -1,39 +1,46 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
 ---
 
-<Layout title={`404 Not Found | Kinshuk Phalke`}>
-  <Header />
-
-  <main id="main-content">
+<Layout title="404 Not Found | Kinshuk Phalke">
     <div class="not-found-wrapper">
-      <h1 aria-label="404 Not Found">404</h1>
+      <h1>404</h1>
       <p>Page Not Found</p>
-      <a
-        href="/"
-        class="hover:text-skin-base my-6 underline decoration-dashed underline-offset-8 text-lg"
-      >
+      <a href="/">
         Go back home
       </a>
     </div>
-  </main>
-
-  <Footer />
 </Layout>
 
 <style>
-  #main-content {
-    @apply max-w-3xl mx-auto flex-1 justify-center items-center flex;
-  }
-  .not-found-wrapper {
-    @apply flex flex-col items-center justify-center mb-14;
-  }
-  .not-found-wrapper h1 {
-    @apply font-bold text-9xl text-skin-accent;
-  }
-  .not-found-wrapper p {
-    @apply text-2xl sm:text-3xl mt-4;
-  }
+#content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.not-found-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-found-wrapper h1 {
+	font-weight: 700;
+    font-size: 15rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.not-found-wrapper p {
+    font-size: 2rem;
+}
+
+.not-found-wrapper a {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 8px;
+    font-size: 1.5rem;
+}
 </style>

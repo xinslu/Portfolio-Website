@@ -7,10 +7,6 @@ import type { Frontmatter } from "src/types";
 const projects  = await Astro.glob<MarkdownInstance>("../assets/projects.md");
 const { frontmatter, Content } = projects[0];
 ---
-<Layout title="Projects | Kinshuk Phalke">
-    <Header activeNav="projects" />
-    <section id="content" class="prose">
-        <h1 className="text-2xl">Projects</h1>
-        <Content />
-    </section>
+<Layout title="Projects" activeTab="projects">
+    <Content />
 </Layout>

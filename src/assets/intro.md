@@ -1,3 +1,5 @@
+# Hi, I am Kinshuk Phalke
+
 I am sophomore at the Georgia Institute of technology, Atlanta where I major in
 Computer Science. I specialize in Systems and Architecture and Artificial
 Intelligence. I am interested in Financial Technologies, Machine Learning

@@ -7,10 +7,6 @@ const experiences = await Astro.glob<MarkdownInstance>("../assets/experiences.md
 const { frontmatter, Content } = experiences[0];
 
 ---
-<Layout title="Experiences | Kinshuk Phalke">
-    <Header activeNav="experience" />
-    <section id="content" class="prose">
-        <h1 className="text-2xl tracking-wider">Experience</h1>
-        <Content />
-    </section>
+<Layout title="Experiences" activeTab="experience">
+    <Content />
 </Layout>

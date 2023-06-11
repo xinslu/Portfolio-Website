@@ -1,15 +1,10 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
 import type { MarkdownInstance } from "astro";
 
 const experiences = await Astro.glob<MarkdownInstance>("../assets/intro.md");
 const { frontmatter, Content } = experiences[0];
 ---
-<Layout>
-    <Header />
-    <section id="content" class="prose">
-        <h1 class="text-bold text-5xl">Hi, I am Kinshuk Phalke</h1>
-        <Content />
-    </section>
+<Layout title="Introduction">
+    <Content />
 </Layout>
