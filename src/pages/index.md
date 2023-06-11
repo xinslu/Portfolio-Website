@@ -1,3 +1,7 @@
+---
+layout: ../layouts/Markdown.astro
+title: Introduction
+---
 # Hi, I am Kinshuk Phalke
 
 I am sophomore at the Georgia Institute of technology, Atlanta where I major in

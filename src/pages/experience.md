@@ -1,3 +1,8 @@
+---
+layout: ../layouts/Markdown.astro
+title: Experiences
+activeTab: experience
+---
 # Experience
 
 ## NCR Corporation

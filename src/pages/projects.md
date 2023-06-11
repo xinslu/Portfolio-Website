@@ -1,3 +1,8 @@
+---
+layout: ../layouts/Markdown.astro
+title: Projects
+activeTab: projects
+---
 # Projects
 
 ## [Tectonic (WIP)](https://github.com/xinslu/tectonic)
