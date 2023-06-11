@@ -1,8 +1,6 @@
 ---
-import Header from "@components/Header.astro";
-import Layout from "@layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro";
 import type { MarkdownInstance } from "astro";
-import type { Frontmatter } from "src/types";
 
 const projects  = await Astro.glob<MarkdownInstance>("../assets/projects.md");
 const { frontmatter, Content } = projects[0];

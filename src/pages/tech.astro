@@ -1,19 +1,13 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import skills from "@assets/skills.js";
+import Layout from "../layouts/Layout.astro";
+import skills from "../assets/skills";
 let skillsString = "";
     skills.map((skill) => {
         skillsString +=
-            `<h2 class="tech-title">` +
-            skill.title +
-        `</h2><br>`;
+            `<h2 class="tech-title">`+skill.title + `</h2><br>`;
         skillsString += `<div class="tech-container">`;
         skill.rows.map((row) => {
-            skillsString += `<div class="row"> <i class="icons devicon-` +
-                    row[0] +
-                    `"></i><p>` +
-                    row[1] +
-                    `</p></div>`;
+            skillsString += `<div class="row"> <i class="icons devicon-` + row[0] +`"></i><p>` + row[1] + `</p></div>`;
         });
         skillsString += `</div>`;
     });
