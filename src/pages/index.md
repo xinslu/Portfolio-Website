@@ -18,8 +18,8 @@ writing a fractal based 3-D platformer using SFML in C++.
 
 I love watching thriller and/or mystery mvies/TV shows, currently my favourites
 stand at [**Dark**](https://en.wikipedia.org/wiki/Dark_(TV_series)) and
-[**Better Call Saul**](https://en.wikipedia.org/wiki/Better_Call_Saul).
-I also love listening to Avicii, Mac Miller and The Weekend.
+[**Better Call Saul**](https://en.wikipedia.org/wiki/Better_Call_Saul). I also
+love listening to Avicii, Mac Miller and The Weekend.
 
 Feel free to reach out to me via my
 [**mail**](mailto:phalkekinshuk@gmail.com) to talk about anything.
