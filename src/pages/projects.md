@@ -8,10 +8,15 @@ activeTab: projects
 ## [Tectonic (WIP)](https://github.com/xinslu/tectonic)
 *Rust*
 
-Contributed to an open source project called tectonic, which is a modernized,
-complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. I
-added the ability for users to specify a **target output pdf** to build, amongst a
-series of outputs.
+Created a model to compete in the Hateful Memes challenge by Meta. The model
+utilizes Facebook's **MMF** (Multi-Model Framework) and the **MultiModal Bitransfomer
+HuggingFace Model**, which integrates **BERT** and **CLIP** models. The model uses the
+CLIP part of the model for image encoder and BERT part of the model for text
+encoder. There was an extensive tiling function applied for the image
+processing that enabled more context for the CLIP model. The text was augmented
+using the **Easy Augmentation Method**. This model with relatively low short amount
+of training managed to make the same performance as the **top 50 submissions** in
+the competition.
 
 ## [BuzzOS Rust Standard Library](https://github.com/xinslu/rust-std-buzzos)
 *Rust*
