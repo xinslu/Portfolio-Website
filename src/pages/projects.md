@@ -5,8 +5,9 @@ activeTab: projects
 ---
 # Projects
 
-## [Tectonic (WIP)](https://github.com/xinslu/tectonic)
-*Rust*
+
+## [Hateful Memes Challenge](https://github.com/xinslu/hateful-memes-dl)
+*Python, PyTorch, Hugging Face*
 
 Created a model to compete in the Hateful Memes challenge by Meta. The model
 utilizes Facebook's **MMF** (Multi-Model Framework) and the **MultiModal Bitransfomer
@@ -17,6 +18,15 @@ processing that enabled more context for the CLIP model. The text was augmented
 using the **Easy Augmentation Method**. This model with relatively low short amount
 of training managed to make the same performance as the **top 50 submissions** in
 the competition.
+
+## [Tectonic (WIP)](https://github.com/xinslu/tectonic)
+*Rust*
+
+Contributed to an open source project called tectonic, which is a modernized,
+complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. I
+added the ability for users to specify a **target output pdf** to build, amongst a
+series of outputs.
+
 
 ## [BuzzOS Rust Standard Library](https://github.com/xinslu/rust-std-buzzos)
 *Rust*
