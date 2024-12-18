@@ -3,73 +3,64 @@ layout: ../layouts/Markdown.astro
 title: Experiences
 activeTab: experience
 ---
+
 # Experience
+
+## NCR Corporation
+*Software Engineering Intern (May 2024 - August 2024)*
+
+I worked as a **Software Engineering Intern** on the **Real Innovation Team**, creating a deployable **testing bench** using **Electron.js**. 
+
+Key achievements include:
+- Deploying the test bench on **Google Cloud Platform (GCP)** to run end-to-end tests written by the team. 
+- Enabling the running of the test bench in a headed mode by integrating **noVNC** and **XServer** services on the cloud. 
+- Implementing automatic deployment using a **Feature Flag** on **LaunchDarkly**.
+- Reducing testing setup time by **10x** (from 10 minutes to 1 minute). 
+
+This enhanced the team's productivity and streamlined the testing workflow.
 
 ## NCR Corporation
 *Software Engineering Intern Team Lead (May 2023 - August 2023)*
 
-I am working as a Software Engineering Intern leading a team of 5 other interns
-on the **Retail Innovation - Edge Team**.
+As a Team Lead, I guided a team of five interns on the Retail Innovation - Edge Team. My primary contribution was developing a **Mock Organization Microservice** using **Flask** in Python. This API generated sample retail organizations populated with categorized catalogs and geographic locations across the country.
 
-I am working on a **Mock Organization Micro-Service**, written in **Flask** in
-Python. This API enables the generation of sample retail organizations,
-populated with a categorized catalog and locations around the country. I worked
-with processing the catalog database, which was generated from an open source
-database. I trained and used a **Brand Recognition NER Models** to accurately
-predict the brand names in a product and remove them from the product name. I also
-worked with randomizing the generation of the product catalog and locations
-using open location datasets. I wrote a **CI/CD pipeline** to help with testing and
-to add functionality to publish micros-service when required.
+Key achievements include:
+- Processing a product catalog database derived from open-source data.
+- Training and deploying **Brand Recognition NER Models** to accurately predict and anonymize brand names in product titles.
+- Randomizing product catalog generation using open location datasets.
+- Designing a robust **CI/CD pipeline** for testing and seamless microservice deployment.
+
+My leadership and technical contributions earned me the **GT Intern of the Year** award.
 
 ## High Performance Architecture Lab
-*Undergraduate Research Assistant (Jan 2023 - Present)*
+*Undergraduate Research Assistant (Jan 2023 - May 2024)*
 
-I am working at the **High Performance Architechture Lab** at Georgia Tech on
-**In-Storage GPU scheduling strategies** to maximize memory capacity and
-performance in GPUs inflicted by memory latency in SSD access.access. I have
-read papers proposing novel approaches to SSD scheduling, including **ZnG,
-SBIOS, and PGIS**. Additionally, I have explored the internal workings of
-**MacSim** and explored DRAM Simulator Code. With the knowledge gained from
-these papers and programs, I am now utilizing strategies proposed in the papers
-to develop an outline of a **warp-based SSD scheduling algorithm**.
+At the High-Performance Architecture Lab at Georgia Tech, I researched **In-Storage GPU Scheduling Strategies** to optimize memory capacity and performance, particularly addressing memory latency in SSD access.
+
+Key achievements include:
+- Studying cutting-edge scheduling approaches like **ZnG**, **SBIOS**, **Amphibian** and **PGIS**.
+- Gaining hands-on experience with **MacSim** and **MQSim**.
+- Developing a SSD Scheduling algorithm based on **Red-Black Trees** to account for **Garbage Collection** and **Channel-Level Parallelism**.
+- Publishing my undergraduate thesis: **Maximizing SSD Bandwidth Efficiency Through In-Storage GPU Integration**
 
 ## NCR Corporation
 *Software Engineering Intern (May 2022 - August 2022)*
 
-For 12 weeks, I worked at the NCR Corporation
-Headquarters in Altanta, GA. I worked on the **Retail
-Innovation - Edge Team**.
+During this internship with the Retail Innovation - Edge Team, I contributed to the **GoKart Selling Service**, a lightweight **Fiber Web Server** API in Golang. This service supported cart creation, management, and selling functionalities.
 
-With a team of 5 other interns, I worked on the **GoKart Selling Service**,
-which is a API written in the **Fiber Web Server** in Golang. This service
-allows for the support of **creation, storage, and management of a cart
-object** achieved with a unique cart identifier. The cart supports the
-inclusion of items retrieved through requests to the **NCR BSP Catalog API**,
-and store locations through to the **BSP Site API**. The cart also supports a
-selling engine and its pertinent calculations like calculating gross-totals,
-totals with promotions applied, exemptions applied, and taxes applied, as well
-as the calculation and handling of returns. The app is meant to work with
-exsisting **retail e-commerce apps** and **Point of Sale systems**. This was
-made to the replace the existing .NET API as this was rather bulky and slow, we
-managed to cut down the size of the binary from 100MB to just **5MB** at
-comparable performance. I worked on writing the core functionality for the
-integrations into the **tax**, **item** and **promotions** layer and also the
-core integrations for the **e-commerce websites** and **Point-Of-Sale**
-Platform. I also wrote a **CI/CD pipeline** that would help with testing and
-also help in publishing the microservice to GCP.
-
-Along with the api, we worked on a sample e-commerce website written in
-**Next.js**on incorporating API into the frontend. To help with development, I
-also made a **bash script** with 12 different presets to help in development,
-building, running and deployment to Google Cloud Platform.
+Key achievements include:
+- Integrating the API with **NCR BSP Catalog API** and **BSP Site API** for item and location retrieval.
+- Enhancing the cart system to handle calculations for taxes, promotions, and returns, enabling seamless integration with **e-commerce apps** and **Point-of-Sale systems**.
+- Reducing binary size from 100MB to **5MB** without compromising performance.
+- Designing a **CI/CD pipeline** for testing and GCP deployment.
+- Building a sample **Next.js e-commerce website** to demonstrate API integration, supported by a custom **bash script** to automate development and deployment tasks.
 
 ## Notitia
-*Software Developer (November 2021 - Present)*
+*Software Developer (November 2021 - December 2022)*
 
-I am working in a start up at Georgia Tech in building a MVP. I worked on
-developing a **Full-Stack Website** and working on fine tuning an NLP model for
-more accurate results. I worked on a machine learning pipeline that uses
-**UMAP** to map the relevant word embeddings of pieces of text onto a 2D graph,
-**FAISS** to effieciently cluster these texts and an **LDA model** on these
-clusters to find accurate topics for these. In the frontend, I worked on
-optimizing WordCloud of test using **ReactFlow**.
+At Notitia, a Georgia Tech startup, I contributed to building an MVP that combined full-stack web development with machine learning.
+
+Key achievements include:
+- Developing a **machine learning pipeline** using **UMAP** for embedding visualization, **FAISS** for efficient text clustering, and an **LDA model** for topic extraction.
+- Optimizing front-end **WordCloud** visualizations using **ReactFlow**.
+- Delivering a polished product that integrated complex NLP workflows into a user-friendly interface.
