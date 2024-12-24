@@ -112,13 +112,14 @@ button {
 
 
 .nav-container {
-    max-width: 50rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .logo {
@@ -133,7 +134,6 @@ button {
 }
 
 nav {
-    max-width: 50rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -202,9 +202,10 @@ nav a.active {
     width: 50%;
 }
 
-@media (max-width:  640px) {
+@media (max-width:  1000px) {
     #nav-menu {
         flex-direction: column;
+        flex-grow: 1;
     }
 
     .hamburger-menu {
