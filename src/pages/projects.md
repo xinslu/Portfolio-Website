@@ -5,6 +5,19 @@ activeTab: projects
 ---
 # Projects
 
+## [Adversarial MultiModal Embedding](https://github.com/xinslu/6747-project)
+*Python, PyTorch*
+
+Created an **Adversarial Model** that targets **Open-Source MultiModal Embedding
+Spaces**. Given a MultiModal input and Adversarial alignment goal, the modal
+works on poisoning the given input in the provided mode to align with the
+Adversarial goal while remaining imperceptible to the human eye. I worked on
+creating a modified version of the **Contrastive Loss** and **Cosine
+Similarity** function to align the input with the Adversarial goal and move it
+away from the input Embedding. The model achieved simultaneous Adversarial
+Alignment over multiple Open-Source Embedding Spaces, while roughly maintaining
+the same level of performance.
+
 
 ## [Hateful Memes Challenge](https://github.com/xinslu/hateful-memes-dl)
 *Python, PyTorch, Hugging Face*
@@ -33,11 +46,11 @@ series of outputs.
 
 Worked on making a minimal implementation of the **Rust Standard Library** for
 BuzzOS, which is an OS developed by the TAs of the Operating Systems class at
-GT. This special version of the Standard Library was implemnented **without a
+GT. This special version of the Standard Library was implemented **without a
 libc**, and using wrapper based interface around **raw syscalls**. I included a
 **String**, **Vector**, **Box** and **Cell** Implementation along with the
 **multiple traits** implemented for each of these types. Implemented a **user
-space**, and allowed the kernel to gracefully handoff to the userspace after
+space**, and allowed the kernel to gracefully hand off to the user space after
 setup.
 
 ## [Mandelbrot Madness (WIP)](https://github.com/saisree27/mandelbrot-madness)
@@ -60,8 +73,8 @@ command-line scripts.
 *Python, ReactJS, Express.js*
 
 Speech2Code is a **turing-complete website** that helps translate a spoken
-english like **meta language** to Java, JavaScript and Python, using a
-**language agnostic class-based abstraction system** that enables easy addtion
+English like **meta language** to Java, JavaScript and Python, using a
+**language agnostic class-based abstraction system** that enables easy addition
 of language support. The speech transcription is done using the **AssemblyAI
 API**. I worked on making the Programming Language Middle-End and worked on
 making CSS changes on the front-end website.
@@ -112,31 +125,31 @@ trail, and one for **collisions with objects**. I also worked on making a
 
 As a part of a dependently-typed (Programming Language Club) on campus, I
 worked on a **python implementation** of the common teaching language Lox. I
-worked on building and degubbing a **Recursive Descent Parser**, **Scanner**
+worked on building and debugging a **Recursive Descent Parser**, **Scanner**
 and a made a script to generate a **python class system** for different atoms
 and a **visitor pattern** for the interpreter class. I also worked on the
 **AST** and a **language environment** to store function and variable
-declration. I lectured at the event about **AST evaluation, dynamic environment
-creation** for functional and recrusive calls and **implementating the vistitor
+declaration. I lectured at the event about **AST evaluation, dynamic environment
+creation** for functional and recursive calls and **implementing the visitor
 patters** for interpreters.
 
 ## [Publixmon](https://github.com/saisree27/publixmon)
 *ReactJS, Express.js, Flask, Firebase, Solidity, Ganache, IPFS, Web3.js, NCR API*
 
 Publixmon is a **full-stack mobile app** integrating modern day NFT and Style
-Tranfer technologies to create a unique interactive retail experience. With
+Transfer technologies to create a unique interactive retail experience. With
 every checkout, the app has a chance to give the user a NFT using a **style
-tranfer machine learning model** based on two attributes a famous painting by a
+transfer machine learning model** based on two attributes a famous painting by a
 **renaissance painting** and an item in your **purchase history**. Users walk
 into a store and scan a QR code to see other active users who are in the store
 and they can **socialize**, see each other's collections of virtual toys, and
 **trade** them to grow their collection. A user's collection is auto-scored
 based on size and **variety of collectibles**, resulting in **higher
 engagement** for the business. I worked on making the backend blockchain that
-generates the NFTs that uses the style tranfer images using **Solidity** and a
+generates the NFTs that uses the style transfer images using **Solidity** and a
 **Ganache Blockchain** to test it on. I worked on creating the backend for the
 project that uses the **NCR API** to serve purchase history and **CDN Network**
-to store the style transfered images.
+to store the style transferred images.
 
 ## [Mental Health Chat](https://github.com/xinslu/mental-health-chat)
 *ReactJS, Express.js, MongoDB, Firebase, Socket.IO*
@@ -144,7 +157,7 @@ to store the style transfered images.
 A timed chat for people to share and talk about issues they're having in
 relation with their mental health and help them overcome it. A message in the
 **Redis database** to expire in about **6 hours** in order to encourage people
-to come out and discourage users from harrasing one another. Created a
+to come out and discourage users from harassing one another. Created a
 **Dockerized App** with a Redis Instance during development. Set-up a Log-In
 page using **Firebase** that is capable of using **Google OAuth**, the users
 can then set their username, add a profile picture and set the theme
@@ -155,7 +168,7 @@ can then set their username, add a profile picture and set the theme
 
 A **full-stack fake disaster tweet analysis tool** that uses **TwitterAPI** to
 extract the text from the tweet link that the user pastes in input box and data
-processing tools like **lemmatization, tokenization, N-Grams, Stop Words **,
+processing tools like **lemmatization, tokenization, N-Grams, Stop Words**,
 removal of punctuation, and a **TD-IDF based Logistic Regression NLP model**
 with a 81% accuracy. Used MongoDB, to store user hashed user credentials,
 created a token authentication system and used localstorage to automatically
