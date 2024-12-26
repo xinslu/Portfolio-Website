@@ -33,22 +33,23 @@ const { activeNav } = Astro.props;
             <a
               href="/experience/"
               class={activeNav === "experience" ? "active" : ""}
+              data-astro-prefetch
             >
               Experience
             </a>
           </li>
           <li>
-            <a href="/projects/" class={activeNav === "projects" ? "active" : ""}>
+            <a href="/projects/" class={activeNav === "projects" ? "active" : ""} data-astro-prefetch>
               Projects
             </a>
           </li>
           <li>
-            <a href="/tech/" class={activeNav === "tech" ? "active" : ""}>
+            <a href="/tech/" class={activeNav === "tech" ? "active" : ""} data-astro-prefetch>
               Tech
             </a>
           </li>
           <li>
-            <a href="https://xinslu.github.io/build/Resume/Resume.pdf">
+            <a href="https://xinslu.github.io/build/Resume/Resume.pdf" data-astro-prefetch>
               Resume
             </a>
           </li>
@@ -95,142 +96,3 @@ const { activeNav } = Astro.props;
     }
   });
 </script>
-
-<style>
-::-webkit-scrollbar {
-    width: 0.75rem;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-fill);
-}
-
-button {
-    border-width: 0px;
-    background: transparent;
-}
-
-
-.nav-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.logo {
-    position: absolute;
-    padding: 1rem;
-}
-
-.hamburger-menu {
-    align-self: flex-end;
-    padding-right: 1rem;
-    display: none;
-}
-
-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-nav ul {
-    display: flex;
-    row-gap: 0px;
-    column-gap: 1.25rem;
-}
-
-
-nav ul li {
-    display: flex;
-    grid-column: span 2 / span 2;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li a {
-    width: 100%;
-    text-align: center;
-    text-decoration-line: none;
-}
-
-nav ul li a:hover  {
-    color: var(--color-accent);
-}
-
-nav a.active {
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-underline-offset: 4px;
-}
-
-#theme-btn {
-    margin-right: 1rem;
-    cursor: pointer;
-}
-
-.icon-container {
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.icon-container div {
-    height: 0.1rem;
-    background: var(--color-base);
-}
-
-#first-line {
-    width: 100%;
-}
-
-#second-line {
-    width: 75%;
-}
-#third-line {
-    width: 50%;
-}
-
-@media (max-width:  1000px) {
-    #nav-menu {
-        flex-direction: column;
-        flex-grow: 1;
-    }
-
-    .hamburger-menu {
-        display: flex !important;
-    }
-
-
-    nav ul {
-        width: 100% !important;
-        display: none;
-    }
-
-    nav ul li a {
-        margin-top: 1rem;
-    }
-
-
-    .show {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    #theme-btn {
-        margin-top: 1rem;
-    }
-}
-
-</style>
