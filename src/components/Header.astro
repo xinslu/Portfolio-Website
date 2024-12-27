@@ -8,7 +8,7 @@ const { activeNav } = Astro.props;
 
 <header>
   <div class="nav-container">
-      <a href="/" class="logo" data-astro-prefetch>
+      <a href="/" class="logo" data-astro-prefetch="viewport">
         <svg xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1 1 1 0 0 0-.29-.71zM6 20v-9.59l6-6 6 6V20z"
@@ -33,23 +33,23 @@ const { activeNav } = Astro.props;
             <a
               href="/experience/"
               class={activeNav === "experience" ? "active" : ""}
-              data-astro-prefetch
+              data-astro-prefetch="viewport"
             >
               Experience
             </a>
           </li>
           <li>
-            <a href="/projects/" class={activeNav === "projects" ? "active" : ""} data-astro-prefetch>
+            <a href="/projects/" class={activeNav === "projects" ? "active" : ""} data-astro-prefetch="viewport">
               Projects
             </a>
           </li>
           <li>
-            <a href="/tech/" class={activeNav === "tech" ? "active" : ""} data-astro-prefetch>
+            <a href="/tech/" class={activeNav === "tech" ? "active" : ""} data-astro-prefetch="viewport">
               Tech
             </a>
           </li>
           <li>
-            <a href="https://xinslu.github.io/build/Resume/Resume.pdf" data-astro-prefetch>
+            <a href="https://xinslu.github.io/build/Resume/Resume.pdf" data-astro-prefetch="viewport">
               Resume
             </a>
           </li>
