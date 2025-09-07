@@ -27,7 +27,6 @@ html[data-theme="dark"] #sun-svg {
     display: block;
 }
 
-
 body {
     background-color: var(--color-fill);
     display: flex;
@@ -110,33 +109,6 @@ svg:hover {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
-
-/* /tech */
-.icons {
-    display: grid;
-    font-size: 40px !important;
-    color: var(--color-accent);
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.tech-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center;
-}
-
-.row p {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.tech-title {
-    margin-bottom: 0.5rem !important;
 }
 
 .footer-wrapper {

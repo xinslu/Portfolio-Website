@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  activeNav?: "experience" | "projects" | "tech";
+activeNav?: "experience" | "projects";
 }
 
 const { activeNav } = Astro.props;
@@ -41,11 +41,6 @@ const { activeNav } = Astro.props;
           <li>
             <a href="/projects/" class={activeNav === "projects" ? "active" : ""} data-astro-prefetch="hover">
               Projects
-            </a>
-          </li>
-          <li>
-            <a href="/tech/" class={activeNav === "tech" ? "active" : ""} data-astro-prefetch="hover">
-              Tech
             </a>
           </li>
           <li>

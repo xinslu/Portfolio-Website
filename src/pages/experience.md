@@ -6,16 +6,26 @@ activeTab: experience
 
 # Experience
 
-## NCR Corporation
+## Meta
+*Software Engineering Intern (May 2025 - August 2025)*
+
+I worked as a **Software Engineering Intern** on the **Click to Message Adoption Team**, creating an experience that allows users to replace copyrighted audio on reels with royalty-free music.
+
+Key achievements include:
+- Designed and launched a new feature enabling users to replace reel audio with **copyright-free tracks**, driving ad creation.
+- Built a video and audio editor with **real-time preview** and audio track selection streamlining content editing.
+- Developed **end-to-end test suites** and led **engagement experiments** to assess interactions on new experience.
+
+## NCR Voyix
 *Software Engineering Intern (May 2024 - August 2024)*
 
-I worked as a **Software Engineering Intern** on the **Real Innovation Team**, creating a deployable **testing bench** using **Electron.js**. 
+I worked as a **Software Engineering Intern** on the **Retail Innovation Team**, creating a deployable **testing bench** using **Electron.js**. 
 
 Key achievements include:
 - Deploying the test bench on **Google Cloud Platform (GCP)** to run end-to-end tests written by the team. 
 - Enabling the running of the test bench in a headed mode by integrating **noVNC** and **XServer** services on the cloud. 
 - Implementing automatic deployment using a **Feature Flag** on **LaunchDarkly**.
-- Reducing testing setup time by **10x** (from 10 minutes to 1 minute). 
+- Reducing testing setup time by **10x** (from 10 minutes to 1 minute).
 
 This enhanced the team's productivity and streamlined the testing workflow.
 
